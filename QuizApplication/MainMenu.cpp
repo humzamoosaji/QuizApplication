@@ -16,30 +16,25 @@ MainMenu::MainMenu(float width, float height)
 	sprite.setTexture(texture);
 	sprite.setScale(width / texture.getSize().x, height / texture.getSize().y);
 
+	string menuStrings[] = {
+	"WELCOME! BEGIN BY CHOOSING A SPORT",
+	"FOOTBALL",
+	"CRICKET",
+	"RUGBY"
+	};
+	int numItems = sizeof(menuStrings) / sizeof(menuStrings[0]);
+
 	menu[0].setFont(font);
-	menu[0].setFillColor(sf::Color::Blue);
+	menu[0].setFillColor(sf::Color::White);
 	menu[0].setString("WELCOME! BEGIN BY CHOOSING A SPORT");
-	menu[0].setPosition(sf::Vector2f(width / 3, height / (MAX_NUMBER_OF_ITEMS + 1) * 1));
+	menu[0].setPosition(sf::Vector2f(width / 3, height / 2 - 150));
 
-	if (!font.loadFromFile("BebasNeue-Regular.ttf"))
-	{
-		// handle error
+	for (int i = 1; i < numItems; i++) {
+		menu[i].setFont(font);
+		menu[i].setFillColor(sf::Color::White);
+		menu[i].setString(menuStrings[i]);
+		menu[i].setPosition(sf::Vector2f(width / 3, height / 2 + i * 50 - 100));
 	}
-
-	menu[1].setFont(font);
-	menu[1].setFillColor(sf::Color::White);
-	menu[1].setString("FOOTBALL");
-	menu[1].setPosition(sf::Vector2f(width / 3, height / (MAX_NUMBER_OF_ITEMS + 1) * 2/1.25));
-
-	menu[2].setFont(font);
-	menu[2].setFillColor(sf::Color::White);
-	menu[2].setString("CRICKET");
-	menu[2].setPosition(sf::Vector2f(width / 3, height / (MAX_NUMBER_OF_ITEMS + 1) * 3/1.5));
-
-	menu[3].setFont(font);
-	menu[3].setFillColor(sf::Color::White);
-	menu[3].setString("RUGBY");
-	menu[3].setPosition(sf::Vector2f(width / 3, height / (MAX_NUMBER_OF_ITEMS + 1) * 4/1.6));
 
 }
 

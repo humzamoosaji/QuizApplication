@@ -31,15 +31,15 @@ MultipleChoiceQuestion QuestionBank::getRandomQuestion()
     int randomQuestionIndex = rand() % quizQuestions.size();
     while (usedQuestions.find(randomQuestionIndex) != usedQuestions.end())
     {
-        randomQuestionIndex = rand() % 34;
+        randomQuestionIndex = rand() % quizQuestions.size();
     }
     usedQuestions.insert(randomQuestionIndex);
     return quizQuestions[randomQuestionIndex];
 }
 
-std::vector<MultipleChoiceQuestion> QuestionBank::getQuestions(int numQuestions)
+vector<MultipleChoiceQuestion> QuestionBank::getQuestions(int numQuestions)
 {
-    loadQuestions("MCQFootballEasy.txt");
+    loadQuestions("FootballMCQEasy.txt");
     vector<MultipleChoiceQuestion> questions;
     for (int i = 0; i < numQuestions; i++)
     {

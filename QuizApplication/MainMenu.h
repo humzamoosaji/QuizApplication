@@ -2,6 +2,8 @@
 
 #define MAX_NUMBER_OF_ITEMS 4
 
+using namespace std;
+
 class MainMenu
 {
 public:
@@ -11,7 +13,7 @@ public:
 	void draw(sf::RenderWindow& window);
 
 private:
-	int selectedItemIndex;
+	string selectedSport;
 	sf::Font font;
 	sf::Text menu[MAX_NUMBER_OF_ITEMS];
 	sf::Sprite sprite;

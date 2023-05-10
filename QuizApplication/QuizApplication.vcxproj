@@ -133,10 +133,12 @@
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="QuestionBank.cpp" />
     <ClCompile Include="QuizApplication.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="QuestionBank.h" />
+    <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="FootballMCQEasy.txt" />
