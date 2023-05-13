@@ -1,0 +1,414 @@
+Which country won the 2018 FIFA World Cup?
+France
+Spain
+Brazil
+Germany
+France
+Which team has won the most UEFA Champions League titles?
+Manchester United
+Real Madrid
+Barcelona
+Bayern Munich
+Real Madrid
+Which player has won the Ballon d'Or award the most times?
+Lionel Messi
+Cristiano Ronaldo
+Michel Platini
+Johan Cruyff
+Lionel Messi
+Which team has won the most Premier League titles?
+Manchester United
+Liverpool
+Arsenal
+Chelsea
+Manchester United
+Who is the current manager of Manchester City?
+Jurgen Klopp
+Pep Guardiola
+Zinedine Zidane
+Jose Mourinho
+Pep Guardiola
+Which team won the 2021 UEFA Europa League?
+Villarreal
+Manchester United
+Arsenal
+Roma
+Villarreal
+Who is the all-time leading goalscorer in the UEFA Champions League?
+Lionel Messi
+Cristiano Ronaldo
+Robert Lewandowski
+Raul
+Cristiano Ronaldo
+Which team has won the most La Liga titles?
+Real Madrid
+Barcelona
+Atletico Madrid
+Valencia
+Barcelona
+Who is the current captain of the English national team?
+Harry Kane
+Raheem Sterling
+Marcus Rashford
+Jordan Henderson
+Jordan Henderson
+Which team won the 2020-21 English Premier League?
+Manchester City
+Manchester United
+Liverpool
+Chelsea
+Manchester City
+Who is the all-time leading goalscorer for the Brazilian national team?
+Neymar
+Ronaldo
+Pele
+Romario
+Pele
+Which team has won the most Serie A titles?
+AC Milan
+Inter Milan
+Juventus
+Roma
+Juventus
+Who is the current manager of Real Madrid?
+Carlo Ancelotti
+Zinedine Zidane
+Rafael Benitez
+Jose Mourinho
+Carlo Ancelotti
+Who is the all-time leading goalscorer for the Spanish national team?
+Raul
+Fernando Torres
+David Villa
+David De Gea
+David Villa
+Which team won the 2020-21 UEFA Champions League?
+Manchester City
+Chelsea
+Paris Saint-Germain
+Bayern Munich
+Chelsea
+Who is the current captain of the French national team?
+Antoine Griezmann
+Hugo Lloris
+Kylian Mbappe
+Paul Pogba
+Hugo Lloris
+Which team has won the most Copa Libertadores titles?
+Boca Juniors
+River Plate
+Sao Paulo
+Independiente
+Independiente
+Who won the 2020-21 FA Cup?
+Arsenal
+Chelsea
+Manchester City
+Manchester United
+Chelsea
+Who is the all-time leading goalscorer for the English Premier League?
+Wayne Rooney
+Alan Shearer
+Andy Cole
+Thierry Henry
+Alan Shearer
+Who is the current captain of the Spanish national team?
+Sergio Ramos
+Gerard Pique
+Sergio Busquets
+Jordi Alba
+Sergio Busquets
+Which team has won the most FIFA Club World Cup titles?
+Real Madrid
+Barcelona
+Bayern Munich
+AC Milan
+Real Madrid
+Who won the 2020-21 UEFA Europa Conference League?
+AS Roma
+Tottenham Hotspur
+Villarreal
+Feyenoord
+Villarreal
+Who is the all-time leading goalscorer for the German national team?
+Miroslav Klose
+Gerd Muller
+Thomas Muller
+Jurgen Klinsmann
+Miroslav Klose
+Which team won the 2020-21 Italian Serie A?
+Juventus
+Inter Milan
+AC Milan
+Roma
+Inter Milan
+Who is the current manager of Liverpool?
+Jurgen Klopp
+Carlo Ancelotti
+Pep Guardiola
+Mauricio Pochettino
+Jurgen Klopp
+Who is the all-time leading goalscorer for the Portuguese national team?
+Eusebio
+Luis Figo
+Cristiano Ronaldo
+Pauleta
+Cristiano Ronaldo
+Which team won the 2020-21 Spanish La Liga?
+Real Madrid
+Atletico Madrid
+Barcelona
+Sevilla
+Atletico Madrid
+Who is the current captain of the German national team?
+Manuel Neuer
+Mats Hummels
+Joshua Kimmich
+Toni Kroos
+Manuel Neuer
+Which team has won the most Scottish Premier League titles?
+Celtic
+Rangers
+Aberdeen
+Hibernian
+Celtic
+Who is the all-time leading goalscorer for the French national team?
+Thierry Henry
+Zinedine Zidane
+Michel Platini
+Just Fontaine
+Thierry Henry
+Which team won the 2021 Copa America?
+Brazil
+Argentina
+Uruguay
+Colombia
+Argentina
+Who is the current manager of the Italian national team?
+Roberto Mancini
+Antonio Conte
+Gian Piero Gasperini
+Massimiliano Allegri
+Roberto Mancini
+Which team has won the most English FA Cup titles?
+Manchester United
+Arsenal
+Liverpool
+Chelsea
+Arsenal
+Who is the all-time leading goalscorer for the Dutch national team?
+Johan Cruyff
+Ruud Gullit
+Marco van Basten
+Robin van Persie
+Robin van Persie
+Which country won the 2014 FIFA World Cup?
+Germany
+Argentina
+Brazil
+Spain
+Germany
+Who is the all-time leading goalscorer for the English national team?
+Wayne Rooney
+Gary Lineker
+Bobby Charlton
+Michael Owen
+Wayne Rooney
+Which team has won the most UEFA European Championships?
+Germany
+Spain
+France
+Italy
+Germany
+Who won the FIFA Women's World Cup in 2019?
+United States
+Netherlands
+Sweden
+Germany
+United States
+Who is the current manager of the French national team?
+Didier Deschamps
+Laurent Blanc
+Arsene Wenger
+Raymond Domenech
+Didier Deschamps
+Which team has won the most FIFA Club World Cup titles?
+Real Madrid
+Barcelona
+Bayern Munich
+AC Milan
+Real Madrid
+Who is the all-time leading goalscorer for the Belgian national team?
+Romelu Lukaku
+Eden Hazard
+Jan Ceulemans
+Bernard Voorhoof
+Romelu Lukaku
+Which team won the UEFA Euro 2016?
+Portugal
+France
+Germany
+Italy
+Portugal
+Who is the current captain of the Argentine national team?
+Lionel Messi
+Sergio Aguero
+Paulo Dybala
+Angel Di Maria
+Lionel Messi
+Which team has won the most Copa America titles?
+Uruguay
+Brazil
+Argentina
+Colombia
+Uruguay
+Who won the FIFA Women's World Cup in 2015?
+United States
+Japan
+Germany
+Brazil
+United States
+Who is the all-time leading goalscorer for the Mexican national team?
+Javier Hernandez
+Jared Borgetti
+Cuauhtemoc Blanco
+Hugo Sanchez
+Javier Hernandez
+Which team has won the most African Cup of Nations titles?
+Egypt
+Cameroon
+Nigeria
+Ghana
+Egypt
+Who is the current captain of the Portuguese national team?
+Cristiano Ronaldo
+Bruno Fernandes
+João Cancelo
+Bernardo Silva
+Cristiano Ronaldo
+Which team won the UEFA Euro 2020?
+Italy
+England
+France
+Belgium
+Italy
+Who is the all-time leading goalscorer for the Australian national team?
+Tim Cahill
+Mark Viduka
+Harry Kewell
+Mile Jedinak
+Tim Cahill
+Which team has won the most Copa del Rey titles in Spain?
+Barcelona
+Real Madrid
+Atletico Madrid
+Valencia
+Barcelona
+Who is the current captain of the German national team?
+Manuel Neuer
+Toni Kroos
+Mats Hummels
+Joshua Kimmich
+Manuel Neuer
+Who is the all-time leading goalscorer for the Swedish national team?
+Zlatan Ibrahimovic
+Henrik Larsson
+Sven Rydell
+Gunnar Nordahl
+Zlatan Ibrahimovic
+Which team has won the most Copa Libertadores titles?
+Boca Juniors
+River Plate
+Santos
+Sao Paulo
+Boca Juniors
+Who won the UEFA European Championship in 2008?
+Spain
+Germany
+Italy
+Netherlands
+Spain
+Who is the current manager of the Spanish national team?
+Luis Enrique
+Vicente del Bosque
+Jose Mourinho
+Pep Guardiola
+Luis Enrique
+Which team has won the most Scottish Premiership titles?
+Celtic
+Rangers
+Aberdeen
+Hibernian
+Celtic
+Who is the all-time leading goalscorer for the French national team?
+Thierry Henry
+Michel Platini
+Zinedine Zidane
+Just Fontaine
+Just Fontaine
+Which team won the 2021 Copa America?
+Brazil
+Argentina
+Uruguay
+Colombia
+Argentina
+Who is the current manager of the Italian national team?
+Roberto Mancini
+Antonio Conte
+Gian Piero Gasperini
+Massimiliano Allegri
+Roberto Mancini
+Which team has won the most English FA Cup titles?
+Manchester United
+Arsenal
+Liverpool
+Chelsea
+Arsenal
+Who is the all-time leading goalscorer for the Dutch national team?
+Johan Cruyff
+Ruud Gullit
+Marco van Basten
+Robin van Persie
+Robin van Persie
+Which team won the 2020-21 UEFA Champions League?
+Bayern Munich
+Manchester City
+Chelsea
+Paris Saint-Germain
+Chelsea
+Who is the all-time leading goalscorer for the Argentine national team?
+Diego Maradona
+Lionel Messi
+Gabriel Batistuta
+Hernan Crespo
+Lionel Messi
+Which team has won the most UEFA Champions League/European Cup titles?
+Real Madrid
+Barcelona
+Liverpool
+AC Milan
+Real Madrid
+Who won the 2018 FIFA World Cup Golden Boot?
+Kylian Mbappe
+Antoine Griezmann
+Cristiano Ronaldo
+Harry Kane
+Harry Kane
+Who is the all-time leading goalscorer for the Brazilian national team?
+Ronaldo
+Neymar
+Pele
+Romario
+Pele
+Which team has won the most English Premier League titles?
+Manchester United
+Arsenal
+Liverpool
+Chelsea
+Manchester United
+Who is the current manager of the Brazilian national team?
+Tite
+Carlos Queiroz
+Fabio Capello
+Luis Enrique
+Tite

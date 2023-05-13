@@ -40,10 +40,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="FootballMCQEasy.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="FootballMCQMedium.txt">
+    <Text Include="FootballMCQ.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

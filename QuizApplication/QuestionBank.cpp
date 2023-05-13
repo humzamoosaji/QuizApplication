@@ -3,13 +3,15 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-void QuestionBank::loadQuestions(std::string fileName)
+
+template<class QuestionType>
+void QuestionBank<QuestionType>::loadQuestions(std::string fileName)
 {
     ifstream inputFile(fileName);
 
     std::string line;
     while (getline(inputFile, line)) {
-        MultipleChoiceQuestion question;
+        QuestionType question;
         question.question = line;
 
         int numAnswers = 4;
@@ -25,7 +27,8 @@ void QuestionBank::loadQuestions(std::string fileName)
     }
 }
 
-MultipleChoiceQuestion QuestionBank::getRandomQuestion()
+template<class QuestionType>
+QuestionType QuestionBank<QuestionType>::getRandomQuestion()
 {
     srand(time(0));
     int randomQuestionIndex = rand() % quizQuestions.size();
@@ -37,10 +40,11 @@ MultipleChoiceQuestion QuestionBank::getRandomQuestion()
     return quizQuestions[randomQuestionIndex];
 }
 
-vector<MultipleChoiceQuestion> QuestionBank::getQuestions(int numQuestions, string filename)
+template<class QuestionType>
+vector<QuestionType> QuestionBank<QuestionType>::getQuestions(int numQuestions, string filename)
 {
     loadQuestions(filename);
-    vector<MultipleChoiceQuestion> questions;
+    vector<QuestionType> questions;
     for (int i = 0; i < numQuestions; i++)
     {
         questions.push_back(QuestionBank::getRandomQuestion());

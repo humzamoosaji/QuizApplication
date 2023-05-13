@@ -81,3 +81,18 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 
 	return selectedTopic;
 }
+
+string MainMenu::getFileName(QuizTopic topic)
+{
+	switch (topic)
+	{
+	case MainMenu::Football:
+		return "FootballMCQ.txt";
+	case MainMenu::Cricket:
+		return "CricketMCQ.txt";
+	case MainMenu::Rugby:
+		return "RugbyMCQ.txt";
+	default:
+		return "";
+	}
+}

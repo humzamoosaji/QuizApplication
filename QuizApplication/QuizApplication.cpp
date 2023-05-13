@@ -5,17 +5,6 @@
 #include "UserInterface.h"
 #include <iostream>
 
-using namespace std;
-class QuizApplication
-{
-private: 
-	int score;
-	int numQuestions;
-	int currentQuestion;
-	vector<MultipleChoiceQuestion> questions;
-	string playerName;
-};
-
 int main()
 {
     sf::VideoMode videoMode = sf::VideoMode::getDesktopMode();
@@ -24,41 +13,61 @@ int main()
 
     MainMenu menu(window.getSize().x, window.getSize().y);
 
-    QuestionBank qb;
+    QuestionBank<MultipleChoiceQuestion> mcqbank;
+
+    QuestionBank<TrueFalseQuestion> tfbank;
 
     UserInterface ui;
 
     sf::Time timer = sf::seconds(5.0f);
 
+    MainMenu::QuizTopic selectedTopic = MainMenu::None;
 
-    //working code
     while (window.isOpen())
     {
         window.clear();
         menu.draw(window);
         window.display();
-        MainMenu::QuizTopic selectedTopic = menu.getSelectedTopic(window);
-        vector<MultipleChoiceQuestion> questions = qb.getQuestions(10);
-        cout << selectedTopic;
-        for (int i = 0; i < questions.size(); i++)
+
+        vector<MultipleChoiceQuestion> mcquestions;
+
+        if (selectedTopic == MainMenu::None)
         {
-            sf::Event event;
-            while (window.pollEvent(event))
+            // Get the selected quiz topic from the MainMenu
+            selectedTopic = menu.getSelectedTopic(window);
+        }
+        else
+        {
+            string fileName = menu.getFileName(selectedTopic);
+
+            if (!fileName.empty())
             {
-                if (event.type == sf::Event::Closed)
-                {
-                    window.close();
-                }
+                mcquestions = mcqbank.getQuestions(10, fileName);
             }
-            window.clear();
-            ui.displayQuestion(window, questions[i]);
-            ui.displayAnswerOptions(window, questions[i]);
-            string userResponse = ui.getUserAnswer(window, timer, questions[i], ui);
-            window.display();
-            window.clear();
-            ui.displayFeedback(window, userResponse, questions[i]);
-            window.display();
-            sf::sleep(sf::milliseconds(1000));
+            for (int i = 0; i < mcquestions.size(); i++)
+            {
+                sf::Event event;
+                while (window.pollEvent(event))
+                {
+                    if (event.type == sf::Event::Closed)
+                    {
+                        window.close();
+                    }
+                }
+
+                window.clear();
+                ui.displayQuestion(window, mcquestions[i]);
+                ui.displayAnswerOptions(window, mcquestions[i]);
+                string userResponse = ui.getUserAnswer(window, timer, mcquestions[i], ui);
+                window.display();
+                window.clear();
+                ui.displayFeedback(window, userResponse, mcquestions[i]);
+                window.display();
+                sf::sleep(sf::milliseconds(1000));
+            }
+
+            // Reset the selected topic after completing the quiz
+            selectedTopic = MainMenu::None;
         }
     }
 }

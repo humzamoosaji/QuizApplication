@@ -14,16 +14,24 @@ struct MultipleChoiceQuestion
     string correctAnswer;
 };
 
+struct TrueFalseQuestion
+{
+    string question;
+    vector<string> answers;
+    string correctAnswer;
+};
+
+template<class QuestionType>
 class QuestionBank
 {
 public:
-    vector<MultipleChoiceQuestion> getQuestions(int, string);
+    vector<QuestionType> getQuestions(int, string);
 
 private:
-    vector<MultipleChoiceQuestion> quizQuestions;
+    vector<QuestionType> quizQuestions;
     unordered_set<int> usedQuestions;
     void loadQuestions(string);
-    MultipleChoiceQuestion getRandomQuestion();
+    QuestionType getRandomQuestion();
 };
 
 #endif

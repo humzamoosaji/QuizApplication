@@ -10,6 +10,7 @@ public:
 	enum QuizTopic { None, Football, Cricket, Rugby };
 	QuizTopic selectedTopic;
 	QuizTopic getSelectedTopic(sf::RenderWindow& window);
+	string getFileName(QuizTopic);
 	MainMenu(float width, float height);
 	~MainMenu();
 

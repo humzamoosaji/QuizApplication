@@ -141,8 +141,7 @@
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="FootballMCQEasy.txt" />
-    <Text Include="FootballMCQMedium.txt" />
+    <Text Include="FootballMCQ.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

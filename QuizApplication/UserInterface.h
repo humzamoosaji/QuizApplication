@@ -4,9 +4,9 @@
 class UserInterface
 {
 public:
-	void displayQuestion(sf::RenderWindow&, MultipleChoiceQuestion);
-	void displayAnswerOptions(sf::RenderWindow&, MultipleChoiceQuestion);
-	string getUserAnswer(sf::RenderWindow&, sf::Time, MultipleChoiceQuestion, UserInterface);
-	void displayFeedback(sf::RenderWindow&, string, MultipleChoiceQuestion);
+	void displayQuestion(sf::RenderWindow&, QuestionType);
+	void displayAnswerOptions(sf::RenderWindow&, QuestionType);
+	string getUserAnswer(sf::RenderWindow&, sf::Time, QuestionType, UserInterface);
+	void displayFeedback(sf::RenderWindow&, string, QuestionType);
 };
 

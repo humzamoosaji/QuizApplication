@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void UserInterface::displayQuestion(sf::RenderWindow& window, MultipleChoiceQuestion q)
+void UserInterface::displayQuestion(sf::RenderWindow& window, QuestionType q)
 {
     sf::Font font;
     font.loadFromFile("arial.ttf");
@@ -32,7 +32,7 @@ void UserInterface::displayQuestion(sf::RenderWindow& window, MultipleChoiceQues
     window.draw(questionText);
 }
 
-void UserInterface::displayAnswerOptions(sf::RenderWindow& window, MultipleChoiceQuestion q)
+void UserInterface::displayAnswerOptions(sf::RenderWindow& window, QuestionType q)
 {
     sf::Font font;
     font.loadFromFile("arial.ttf");
@@ -58,7 +58,7 @@ void UserInterface::displayAnswerOptions(sf::RenderWindow& window, MultipleChoic
     }
 }
 
-string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime, MultipleChoiceQuestion q, UserInterface ui)
+string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime, QuestionType q, UserInterface ui)
 {
     sf::Clock clock;
     sf::Text timeText;
@@ -107,7 +107,7 @@ string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime
 }
 
 
-void UserInterface::displayFeedback(sf::RenderWindow& window, string userAnswer, MultipleChoiceQuestion q)
+void UserInterface::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType q)
 {
     // Load the gif textures
     sf::Texture correctTexture;
