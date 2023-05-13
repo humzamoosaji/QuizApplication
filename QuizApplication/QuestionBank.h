@@ -17,7 +17,7 @@ struct MultipleChoiceQuestion
 class QuestionBank
 {
 public:
-    vector<MultipleChoiceQuestion> getQuestions(int);
+    vector<MultipleChoiceQuestion> getQuestions(int, string);
 
 private:
     vector<MultipleChoiceQuestion> quizQuestions;

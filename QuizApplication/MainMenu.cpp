@@ -51,3 +51,33 @@ void MainMenu::draw(sf::RenderWindow& window)
 		window.draw(menu[i]);
 	}
 }
+
+MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
+{
+	sf::Event event;
+	while (window.pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed)
+		{
+			window.close();
+		}
+		else if (event.type == sf::Event::MouseButtonPressed)
+		{
+			if (event.mouseButton.button == sf::Mouse::Left)
+			{
+				// Check if any menu item was clicked
+				for (int i = 1; i < MAX_NUMBER_OF_ITEMS; i++)
+				{
+					if (menu[i].getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y))
+					{
+						// Set the selected quiz topic based on the clicked menu item
+						selectedTopic = static_cast<MainMenu::QuizTopic>(i);
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	return selectedTopic;
+}

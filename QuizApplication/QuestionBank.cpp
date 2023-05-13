@@ -37,9 +37,9 @@ MultipleChoiceQuestion QuestionBank::getRandomQuestion()
     return quizQuestions[randomQuestionIndex];
 }
 
-vector<MultipleChoiceQuestion> QuestionBank::getQuestions(int numQuestions)
+vector<MultipleChoiceQuestion> QuestionBank::getQuestions(int numQuestions, string filename)
 {
-    loadQuestions("FootballMCQEasy.txt");
+    loadQuestions(filename);
     vector<MultipleChoiceQuestion> questions;
     for (int i = 0; i < numQuestions; i++)
     {

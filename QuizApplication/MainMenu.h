@@ -7,6 +7,9 @@ using namespace std;
 class MainMenu
 {
 public:
+	enum QuizTopic { None, Football, Cricket, Rugby };
+	QuizTopic selectedTopic;
+	QuizTopic getSelectedTopic(sf::RenderWindow& window);
 	MainMenu(float width, float height);
 	~MainMenu();
 

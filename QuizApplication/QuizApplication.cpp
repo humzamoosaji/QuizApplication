@@ -25,20 +25,21 @@ int main()
     MainMenu menu(window.getSize().x, window.getSize().y);
 
     QuestionBank qb;
-        
-    vector<MultipleChoiceQuestion> questions = qb.getQuestions(10);
 
     UserInterface ui;
 
     sf::Time timer = sf::seconds(5.0f);
 
 
+    //working code
     while (window.isOpen())
     {
         window.clear();
         menu.draw(window);
         window.display();
-        sf::sleep(sf::milliseconds(1000));
+        MainMenu::QuizTopic selectedTopic = menu.getSelectedTopic(window);
+        vector<MultipleChoiceQuestion> questions = qb.getQuestions(10);
+        cout << selectedTopic;
         for (int i = 0; i < questions.size(); i++)
         {
             sf::Event event;
