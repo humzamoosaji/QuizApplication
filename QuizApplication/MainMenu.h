@@ -1,4 +1,5 @@
-#include "SFML/Graphics.hpp"
+#pragma once
+#include <SFML/Graphics.hpp>
 
 #define MAX_NUMBER_OF_ITEMS 4
 
@@ -10,7 +11,7 @@ public:
 	enum QuizTopic { None, Football, Cricket, Rugby };
 	QuizTopic selectedTopic;
 	QuizTopic getSelectedTopic(sf::RenderWindow& window);
-	string getFileName(QuizTopic);
+	string getFileName(QuizTopic, bool);
 	MainMenu(float width, float height);
 	~MainMenu();
 

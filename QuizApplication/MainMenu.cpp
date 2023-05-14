@@ -1,5 +1,6 @@
 #include "MainMenu.h"
 
+using namespace std;
 
 MainMenu::MainMenu(float width, float height)
 {
@@ -10,7 +11,7 @@ MainMenu::MainMenu(float width, float height)
 
 	if (!texture.loadFromFile("background.jpg"))
 	{
-		exit;
+		exit(1);
 	}
 
 	sprite.setTexture(texture);
@@ -82,16 +83,17 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 	return selectedTopic;
 }
 
-string MainMenu::getFileName(QuizTopic topic)
+string MainMenu::getFileName(QuizTopic topic, bool isMCQ)
 {
+	string extension = isMCQ ? "MCQ.txt" : "TF.txt";
 	switch (topic)
 	{
 	case MainMenu::Football:
-		return "FootballMCQ.txt";
+		return "Football" + extension;
 	case MainMenu::Cricket:
-		return "CricketMCQ.txt";
+		return "Cricket" + extension;
 	case MainMenu::Rugby:
-		return "RugbyMCQ.txt";
+		return "Rugby" + extension;
 	default:
 		return "";
 	}

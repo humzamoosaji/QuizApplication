@@ -1,9 +1,11 @@
 #include "UserInterface.h"
+#include <string>
 #include "SFML/Graphics.hpp"
 
 using namespace std;
 
-void UserInterface::displayQuestion(sf::RenderWindow& window, QuestionType q)
+template<class QuestionType>
+void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, QuestionType q, MainMenu::QuizTopic selectedTopic)
 {
     sf::Font font;
     font.loadFromFile("arial.ttf");
@@ -28,11 +30,36 @@ void UserInterface::displayQuestion(sf::RenderWindow& window, QuestionType q)
     int width = window.getSize().x;
     int height = window.getSize().y;
 
+    // Load background image based on the selected topic
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
+
+    if (selectedTopic == MainMenu::QuizTopic::Football) {
+        backgroundTexture.loadFromFile("background_football.jpg");
+    }
+    else if (selectedTopic == MainMenu::QuizTopic::Cricket) {
+        backgroundTexture.loadFromFile("background_cricket.jpg");
+    }
+    else if (selectedTopic == MainMenu::QuizTopic::Rugby) {
+        backgroundTexture.loadFromFile("background_rugby.jpg");
+    }
+
+    // Set the background sprite properties
+    backgroundSprite.setTexture(backgroundTexture);
+    backgroundSprite.setScale(
+        window.getSize().x / backgroundSprite.getLocalBounds().width,
+        window.getSize().y / backgroundSprite.getLocalBounds().height
+    );
+
+    // Draw the background sprite first
+    window.draw(backgroundSprite);
+
     questionText.setPosition(sf::Vector2f(width / 3, height / 2 - 200));
     window.draw(questionText);
 }
 
-void UserInterface::displayAnswerOptions(sf::RenderWindow& window, QuestionType q)
+template<class QuestionType>
+void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window, QuestionType q)
 {
     sf::Font font;
     font.loadFromFile("arial.ttf");
@@ -48,7 +75,6 @@ void UserInterface::displayAnswerOptions(sf::RenderWindow& window, QuestionType 
         answerButton.setPosition(sf::Vector2f(width / 3, height / 2 + i * 50 - 100));
         window.draw(answerButton);
 
-
         sf::Text answerText;
         answerText.setFont(font);
         answerText.setCharacterSize(24);
@@ -58,7 +84,8 @@ void UserInterface::displayAnswerOptions(sf::RenderWindow& window, QuestionType 
     }
 }
 
-string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime, QuestionType q, UserInterface ui)
+template<class QuestionType>
+string UserInterface<QuestionType>::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime, QuestionType q, UserInterface ui, MainMenu::QuizTopic selectedTopic)
 {
     sf::Clock clock;
     sf::Text timeText;
@@ -80,7 +107,7 @@ string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime
         timeText.setString("Time remaining: " + to_string(remainingTime) + "s");
 
         window.clear();
-        ui.displayQuestion(window, q);
+        ui.displayQuestion(window, q, selectedTopic);
         ui.displayAnswerOptions(window, q);
         timeText.setPosition(window.getSize().x - 250, window.getSize().y - 850);
         window.draw(timeText);
@@ -106,8 +133,8 @@ string UserInterface::getUserAnswer(sf::RenderWindow& window, sf::Time timerTime
     return selectedAnswer;
 }
 
-
-void UserInterface::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType q)
+template <class QuestionType>
+void UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType q)
 {
     // Load the gif textures
     sf::Texture correctTexture;
@@ -119,7 +146,8 @@ void UserInterface::displayFeedback(sf::RenderWindow& window, string userAnswer,
     sf::Sprite backgroundSprite;
     if (userAnswer == q.correctAnswer) {
         backgroundSprite.setTexture(correctTexture);
-    } else {
+    }
+    else {
         backgroundSprite.setTexture(incorrectTexture);
     }
     backgroundSprite.setPosition(0, 0);
@@ -158,3 +186,6 @@ void UserInterface::displayFeedback(sf::RenderWindow& window, string userAnswer,
 
     window.draw(feedbackText);
 }
+
+template class UserInterface<MultipleChoiceQuestion>;
+template class UserInterface<TrueFalseQuestion>;

@@ -1,11 +1,11 @@
-// this will be the main class of the application
 #include "QuestionBank.h"
 #include <SFML/Graphics.hpp>
 #include "MainMenu.h"
 #include "UserInterface.h"
 #include <iostream>
+#include <vector>
 
-int main()
+void run()
 {
     sf::VideoMode videoMode = sf::VideoMode::getDesktopMode();
 
@@ -17,19 +17,21 @@ int main()
 
     QuestionBank<TrueFalseQuestion> tfbank;
 
-    UserInterface ui;
+    UserInterface<MultipleChoiceQuestion> ui;
+
+    UserInterface<TrueFalseQuestion> ui2;
 
     sf::Time timer = sf::seconds(5.0f);
 
     MainMenu::QuizTopic selectedTopic = MainMenu::None;
+
+    bool isMultipleChoice = true; // Flag to track the current question type
 
     while (window.isOpen())
     {
         window.clear();
         menu.draw(window);
         window.display();
-
-        vector<MultipleChoiceQuestion> mcquestions;
 
         if (selectedTopic == MainMenu::None)
         {
@@ -38,36 +40,59 @@ int main()
         }
         else
         {
-            string fileName = menu.getFileName(selectedTopic);
+            string fileName = menu.getFileName(selectedTopic, isMultipleChoice);
 
             if (!fileName.empty())
             {
-                mcquestions = mcqbank.getQuestions(10, fileName);
-            }
-            for (int i = 0; i < mcquestions.size(); i++)
-            {
-                sf::Event event;
-                while (window.pollEvent(event))
+                vector<MultipleChoiceQuestion> mcquestions = mcqbank.getQuestions(5, fileName);
+                for (int i = 0; i < mcquestions.size(); i++)
                 {
-                    if (event.type == sf::Event::Closed)
+                    sf::Event event;
+                    while (window.pollEvent(event))
                     {
-                        window.close();
+                        if (event.type == sf::Event::Closed)
+                        {
+                            window.close();
+                        }
                     }
+                    window.clear();
+                    ui.displayQuestion(window, mcquestions[i], selectedTopic);
+                    ui.displayAnswerOptions(window, mcquestions[i]);
+                    string userResponse = ui.getUserAnswer(window, timer, mcquestions[i], ui, selectedTopic);
+                    window.display();
+                    window.clear();
+                    ui.displayFeedback(window, userResponse, mcquestions[i]);
+                    window.display();
+                    sf::sleep(sf::milliseconds(1000));
                 }
-
-                window.clear();
-                ui.displayQuestion(window, mcquestions[i]);
-                ui.displayAnswerOptions(window, mcquestions[i]);
-                string userResponse = ui.getUserAnswer(window, timer, mcquestions[i], ui);
-                window.display();
-                window.clear();
-                ui.displayFeedback(window, userResponse, mcquestions[i]);
-                window.display();
-                sf::sleep(sf::milliseconds(1000));
+                isMultipleChoice = false;
+                fileName = menu.getFileName(selectedTopic, isMultipleChoice);
+                vector<TrueFalseQuestion> tfquestions = tfbank.getQuestions(5, fileName);
+                for (int i = 0; i < tfquestions.size(); i++)
+                {
+                    sf::Event event;
+                    while (window.pollEvent(event))
+                    {
+                        if (event.type == sf::Event::Closed)
+                        {
+                            window.close();
+                        }
+                    }
+                    window.clear();
+                    ui2.displayQuestion(window, tfquestions[i], selectedTopic);
+                    ui2.displayAnswerOptions(window, tfquestions[i]);
+                    string userResponse = ui2.getUserAnswer(window, timer, tfquestions[i], ui2, selectedTopic);
+                    window.display();
+                    window.clear();
+                    ui2.displayFeedback(window, userResponse, tfquestions[i]);
+                    window.display();
+                    sf::sleep(sf::milliseconds(1000));
+                }
             }
-
-            // Reset the selected topic after completing the quiz
+            // Reset the selected topic and toggle the question type after completing the quiz
             selectedTopic = MainMenu::None;
+            isMultipleChoice = !isMultipleChoice;
         }
     }
+    return 0;
 }

@@ -5,22 +5,24 @@
 using namespace std;
 
 template<class QuestionType>
-void QuestionBank<QuestionType>::loadQuestions(std::string fileName)
+void QuestionBank<QuestionType>::loadQuestions(string fileName)
 {
     ifstream inputFile(fileName);
 
-    std::string line;
+    string line;
+
     while (getline(inputFile, line)) {
         QuestionType question;
         question.question = line;
 
-        int numAnswers = 4;
+        int numAnswers = (typeid(QuestionType) == typeid(MultipleChoiceQuestion)) ? 4 : 2;
+
         for (int i = 0; i < numAnswers; i++) {
             getline(inputFile, line);
             question.answers.push_back(line);
         }
 
-        std::getline(inputFile, line);
+        getline(inputFile, line);
         question.correctAnswer = line;
 
         quizQuestions.push_back(question);
@@ -47,7 +49,10 @@ vector<QuestionType> QuestionBank<QuestionType>::getQuestions(int numQuestions, 
     vector<QuestionType> questions;
     for (int i = 0; i < numQuestions; i++)
     {
-        questions.push_back(QuestionBank::getRandomQuestion());
+        questions.push_back(getRandomQuestion());
     }
     return questions;
 }
+
+template class QuestionBank<MultipleChoiceQuestion>;
+template class QuestionBank<TrueFalseQuestion>;

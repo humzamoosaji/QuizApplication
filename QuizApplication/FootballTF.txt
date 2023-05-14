@@ -1,0 +1,88 @@
+Cristiano Ronaldo has won the Ballon d'Or award more times than Lionel Messi.
+True
+False
+False
+The FIFA World Cup is held every four years.
+True
+False
+True
+Pele is the all-time leading goalscorer in the FIFA World Cup.
+True
+False
+True
+The UEFA Champions League final is played over two legs.
+True
+False
+False
+The English Premier League has 18 teams.
+True
+False
+False
+Lionel Messi has won the UEFA European Championship with the Argentina national team.
+True
+False
+False
+The Copa America is a tournament for national teams in South America.
+True
+False
+True
+The Bundesliga is the top professional football league in Italy.
+True
+False
+False
+The FIFA Club World Cup features teams from all six continental confederations.
+True
+False
+True
+The World Cup Golden Boot is awarded to the tournament's best goalkeeper.
+True
+False
+False
+The Premier League record for the most goals scored in a single season is held by Cristiano Ronaldo.
+True
+False
+False
+The European Golden Shoe is awarded to the top goalscorer in the UEFA Champions League.
+True
+False
+False
+The FIFA Women's World Cup is held every three years.
+True
+False
+False
+The UEFA European Championship is also known as the Euros.
+True
+False
+True
+The Africa Cup of Nations is organized by the Confederation of African Football (CAF).
+True
+False
+True
+The FIFA World Cup has been canceled only once in its history.
+True
+False
+False
+The UEFA Europa League winner automatically qualifies for the following season's Champions League.
+True
+False
+True
+The current format of the UEFA Champions League has been in place since 1992.
+True
+False
+True
+The UEFA Nations League is a biennial competition.
+True
+False
+False
+The FIFA World Cup has been hosted by Australia.
+True
+False
+False
+The UEFA Super Cup is played between the winners of the Champions League and Europa League.
+True
+False
+True
+The top scorer in the Premier League receives the Golden Boot award.
+True
+False
+True

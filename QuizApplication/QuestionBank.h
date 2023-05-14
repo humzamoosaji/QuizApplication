@@ -1,8 +1,13 @@
+#pragma once
 #ifndef QUESTIONBANK_H
 #define QUESTIONBANK_H
 
-#include <vector>
+#include <string>
 #include <unordered_set>
+#include <vector>
+#include <set>
+#include <fstream>
+#include <typeinfo>
 #include <string>
 
 using namespace std;
