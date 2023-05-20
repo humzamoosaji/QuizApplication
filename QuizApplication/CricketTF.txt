@@ -1,0 +1,244 @@
+Cricket matches are played in four quarters.
+True
+False
+False
+A century in cricket refers to scoring 100 runs by a batsman. 
+True
+False
+True
+The wickets in cricket are made of aluminum.
+True
+False
+False
+A cricket team consists of 10 players.
+True
+False
+False
+Powerplay in cricket refers to a period when only two fielders are allowed outside the inner circle. 
+True
+False
+True
+A googly is a type of bowling technique in cricket. 
+True
+False
+True
+A cricket match can end in a draw.
+True
+False
+True
+The highest governing body in international cricket is called ICC (International Cricket Council).
+True
+False
+True
+A boundary hit on the full (without bouncing) results in six runs.
+True
+False
+True
+A leg-spinner is a left-handed bowler in cricket.
+True
+False
+False
+The Ashes is a Test cricket series played between England and South Africa. 
+True
+False
+False 
+A bouncer is a type of delivery bowled at a higher speed and aimed at the batsman's head.
+True
+False
+True
+A cricket ball can reach speeds of over 150 km/h (93 mph).
+True
+False
+True
+A maiden over in cricket refers to an over in which the bowler concedes no runs.
+True
+False
+True
+The first international cricket match was played between Australia and England.
+True
+False
+True
+A yorker is a type of bowling delivery that is aimed at the batsman's feet.
+True
+False
+True
+The crease in cricket refers to the area where the batsman stands to take guard.
+True
+False
+True
+A hat-trick in cricket refers to a bowler taking three wickets in consecutive deliveries. 
+True
+False
+True
+The term "silly point" refers to a fielding position close to the batsman on the off side.
+True
+False
+True
+A batsman can be given out if the ball hits their helmet before being caught.
+True
+False
+True
+A cricket match can be played in a day, commonly known as a Day-Night match.
+True
+False
+True
+The third umpire is responsible for making decisions using video replays in cricket. 
+True
+False
+True
+A dead ball in cricket is a ball that is not considered for scoring or getting a batsman out. 
+True
+False
+True
+A cricket team can declare their innings if they want to stop batting.
+True
+False
+True
+The DRS (Decision Review System) is used in cricket to review umpiring decisions.
+True
+False
+True
+A cricket match can have reserve players who can substitute for injured players. 
+True
+False
+True
+A reverse sweep is a batting shot played by a left-handed batsman. 
+True
+False
+False
+A cricket ball is traditionally red in Test matches.
+True
+False
+True
+A spinner is a type of bowler who specializes in slow, spinning deliveries. 
+True
+False
+True
+A cricket match can end in a "no result" if it is abandoned due to external factors like rain or bad light.
+True
+False
+True
+A fielder can catch the ball after it has touched the ground and still dismiss the batsman. 
+True
+False
+False
+The term "follow-on" is used when a team chooses to bat first after winning the toss. 
+True
+False
+False
+The highest individual score in One Day Internationals (ODIs) is 264 runs. 
+True
+False
+True
+A "dot ball" in cricket refers to a delivery in which the batsman does not score any runs. 
+True
+False
+True
+The ICC World Twenty20 tournament is played every two years. 
+True
+False
+False
+The "off side" in cricket refers to the half of the field opposite to where the batsman stands.
+True
+False
+True
+A cricket match can be won by a team without losing a single wicket.
+True
+False
+True
+The term "maiden" refers to a bowler taking five wickets in an innings.
+True
+False
+False
+A cricket match can continue even if it rains, provided the umpires deem the conditions playable. 
+True
+False
+True
+The first ever cricket Test match was played in 1880.
+True
+False
+False
+The third umpire can overrule the on-field umpire's decision based on TV replays. 
+True
+False
+True
+The term "nightwatchman" refers to a batsman who comes in to bat towards the end of the day's play. 
+True
+False
+True
+The highest individual score in T20 Internationals is 172 runs.
+True
+False
+True
+A "free hit" is awarded to the batsman following a no-ball. 
+True
+False
+True
+The "crease" in cricket refers to the line on which the bowler delivers the ball.
+True
+False
+False
+A batsman can be given out if the ball hits the fielder's helmet before being caught. 
+True
+False
+False
+A cricket match can end in a "tiebreaker" if the scores are tied even after a Super Over.
+True
+False
+False
+A "spinner" is a type of bowler who primarily bowls fast deliveries. 
+True
+False
+False
+The highest individual score in international Test cricket is 400 not out. 
+True
+False
+True
+A "run out" in cricket occurs when the batsman is dismissed while attempting to complete a run. 
+True
+False
+True
+A cricket match can end due to bad light conditions if the umpires deem it unsafe to continue. 
+True
+False
+True
+A "golden duck" in cricket refers to a batsman getting out on the first ball they face. 
+True
+False
+True
+A batsman can be given out if the ball hits their gloves and is caught by a fielder. 
+True
+False
+True
+The term "googly" refers to a type of delivery bowled by a fast bowler. 
+True
+False
+False
+A cricket match can be played indoors. 
+True
+False
+True
+A batsman can be given out if the ball hits the fielder's cap and is caught. 
+True
+False
+False
+The term "sixer" is used to describe a delivery that goes for six runs. 
+True
+False
+False
+The "square leg" is a fielding position in front of the batsman on the leg side.
+True
+False
+True
+The term "stumping" in cricket refers to the wicketkeeper removing the bails with the ball, dismissing the batsman. 
+True
+False
+True
+A batsman can be given out if they handle the ball intentionally without the permission of the fielding team.
+True
+False
+True
+A "free hit" is awarded to the batsman following a wide ball. 
+True
+False
+False

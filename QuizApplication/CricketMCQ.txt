@@ -1,0 +1,361 @@
+In what country was cricket first played?
+England
+India
+Australia
+South Africa
+England
+How many players are there in a cricket team?
+8
+11
+9
+10
+11
+What is the highest individual score in a Test match?
+364
+400
+418
+501
+400
+Who has scored the most runs in Test cricket?
+Sachin Tendulkar
+Ricky Ponting
+Brian Lara
+Kumar Sangakkara
+Sachin Tendulkar
+Who has taken the most wickets in Test cricket?
+Muttiah Muralitharan
+Shane Warne
+Anil Kumble
+Glenn McGrath
+Muttiah Muralitharan
+Which country won the first Cricket World Cup in 1975?
+Australia
+West Indies
+England
+India
+West Indies
+In which year was the first T20 World Cup held?
+2005
+2007
+2009
+2011
+2007
+Who has hit the most sixes in T20 internationals?
+Chris Gayle
+Brendon McCullum
+Shahid Afridi
+Rohit Sharma
+Chris Gayle
+Who has scored the most runs in an innings in a T20 international match?
+Aaron Finch
+Chris Gayle
+Rohit Sharma
+Glenn Maxwell
+Chris Gayle
+Which bowler has taken the most wickets in T20 internationals?
+Lasith Malinga
+Shahid Afridi
+Umar Gul
+Imran Tahir
+Lasith Malinga
+Who is the highest wicket-taker in the history of the Indian Premier League?
+Lasith Malinga
+Amit Mishra
+Harbhajan Singh
+Dwayne Bravo
+Amit Mishra
+Which team has won the most IPL titles?
+Mumbai Indians
+Chennai Super Kings
+Kolkata Knight Riders
+Royal Challengers Bangalore
+Mumbai Indians
+Who is the fastest bowler in the history of cricket?
+Shoaib Akhtar
+Brett Lee
+Shaun Tait
+Mitchell Johnson
+Shoaib Akhtar
+Who has the highest individual score in One Day Internationals?
+Rohit Sharma
+Sachin Tendulkar
+Chris Gayle
+Martin Guptill
+Rohit Sharma
+Who has the best bowling figures in an ODI innings?
+Chaminda Vaas
+Glenn McGrath
+Shahid Afridi
+Anil Kumble
+Chaminda Vaas
+Who has won the most ODI matches as a captain?
+Ricky Ponting
+MS Dhoni
+Graeme Smith
+Virat Kohli
+MS Dhoni
+Who is the first batsman to score a double century in One Day Internationals?
+Sachin Tendulkar
+Virender Sehwag
+Rohit Sharma
+Chris Gayle
+Rohit Sharma
+Who has the highest individual score in a Test match by an Indian batsman?
+Virender Sehwag
+Sachin Tendulkar
+Rahul Dravid
+Virat Kohli
+Virender Sehwag
+Who is the only cricketer to score a century and take 10 wickets in the same Test match?
+Ian Botham
+Kapil Dev
+Imran Khan
+Shakib Al Hasan
+Ian Botham
+Who has taken the most catches in Test cricket?
+Rahul Dravid
+Mark Waugh
+Mahela Jayawardene
+Jacques Kallis
+Rahul Dravid
+Who has taken the most wickets in a single edition of the Cricket World Cup?
+Glenn McGrath
+Lasith Malinga
+Wasim Akram
+Mitchell Starc
+Mitchell Starc
+Which team won the 2019 Cricket World Cup?
+India
+Australia
+England
+New Zealand
+England
+Who has scored the most runs in a single innings in a first-class cricket match?
+Brian Lara
+Kumar Sangakkara
+Hanif Mohammad
+Don Bradman
+Hanif Mohammad
+Who has taken the most wickets in a single innings in a Test match?
+Jim Laker
+Anil Kumble
+Muttiah Muralitharan
+Shane Warne
+Jim Laker
+Who has hit the most sixes in Test cricket?
+Chris Gayle
+Shahid Afridi
+Brendon McCullum
+AB de Villiers
+Chris Gayle
+Who is the only bowler to take two hat-tricks in a single Test match?
+Wasim Akram
+Merv Hughes
+Jimmy Matthews
+Lasith Malinga
+Jimmy Matthews
+Who has taken the most catches in T20 internationals?
+AB de Villiers
+Dinesh Karthik
+Mohammad Nabi
+Ross Taylor
+AB de Villiers
+Who is the only bowler to take four wickets in four consecutive balls in international cricket?
+Lasith Malinga
+Brett Lee
+Wasim Akram
+Chaminda Vaas
+Lasith Malinga
+Who is the only player to score a century in all three formats of international cricket?
+Kumar Sangakkara
+Virat Kohli
+Chris Gayle
+Brendon McCullum
+Virat Kohli
+Who has taken the most wickets in the history of the Indian Premier League?
+Lasith Malinga
+Amit Mishra
+Harbhajan Singh
+Sunil Narine
+Amit Mishra
+Who has scored the fastest century in T20 internationals?
+AB de Villiers
+Chris Gayle
+Rohit Sharma
+David Warner
+Chris Gayle
+Who is the only player to take 5 wickets in an innings and score a century in the same Test match?
+Ian Botham
+Kapil Dev
+Imran Khan
+Shakib Al Hasan
+Kapil Dev
+Who has scored the most runs in a single edition of the Indian Premier League?
+Chris Gayle
+Virat Kohli
+Shaun Marsh
+Suresh Raina
+Virat Kohli
+Who has taken the most wickets in a single edition of the Indian Premier League?
+Dwayne Bravo
+Lasith Malinga
+Bhuvneshwar Kumar
+Sohail Tanvir
+Lasith Malinga
+Who has hit the most sixes in the Indian Premier League?
+Chris Gayle
+AB de Villiers
+Rohit Sharma
+MS Dhoni
+Chris Gayle
+Who has scored the most runs in a single edition of the Big Bash League?
+Chris Lynn
+D'Arcy Short
+Michael Klinger
+Shaun Marsh
+D'Arcy Short
+Who has taken the most wickets in a single edition of the Big Bash League?
+Ben Laughlin
+Sean Abbott
+Kane Richardson
+Clint McKay
+Ben Laughlin
+Who has hit the most sixes in the Big Bash League?
+Chris Lynn
+Aaron Finch
+Glenn Maxwell
+D'Arcy Short
+Chris Lynn
+Who is the only bowler to take two hat-tricks in the Indian Premier League?
+Rohit Sharma
+Amit Mishra
+Yuvraj Singh
+Sunil Narine
+Amit Mishra
+Who is the only player to score a century in the Indian Premier League final?
+Shane Watson
+Chris Gayle
+Kieron Pollard
+Mahela Jayawardene
+Shane Watson
+Who has hit the most sixes in international cricket?
+Chris Gayle
+Shahid Afridi
+Brendon McCullum
+MS Dhoni
+Chris Gayle
+Who has the best bowling figures in Test cricket?
+Jim Laker
+Anil Kumble
+Muttiah Muralitharan
+Shane Warne
+Jim Laker
+Who has taken the most wickets in the history of One Day Internationals?
+Glenn McGrath
+Wasim Akram
+Waqar Younis
+Muttiah Muralitharan
+Muttiah Muralitharan
+Who has scored the most runs in the history of One Day Internationals?
+Sachin Tendulkar
+Kumar Sangakkara
+Ricky Rich
+Hashim Amla
+Sachin Tendulkar
+Who is the only player to score two double centuries in One Day Internationals?
+Sachin Tendulkar
+Rohit Sharma
+Virender Sehwag
+Chris Gayle
+Rohit Sharma
+Who has the best bowling figures in a One Day International innings?
+Chaminda Vaas
+Glenn McGrath
+Rashid Khan
+Anil Kumble
+Chaminda Vaas
+Who is the only player to score a century and take 5 wickets in the same World Cup match?
+Yuvraj Singh
+Kapil Dev
+Shakib Al Hasan
+Glenn Maxwell
+Shakib Al Hasan
+Who is the highest wicket-taker in the history of the Cricket World Cup?
+Glenn McGrath
+Wasim Akram
+Muttiah Muralitharan
+Shane Warne
+Glenn McGrath
+Who is the leading run-scorer in the history of the Cricket World Cup?
+Sachin Tendulkar
+Ricky Ponting
+Brian Lara
+Kumar Sangakkara
+Sachin Tendulkar
+Who has scored the most runs in a single edition of the Cricket World Cup?
+Sachin Tendulkar
+Martin Guptill
+Kumar Sangakkara
+Matthew Hayden
+Martin Guptill
+Who has hit the most sixes in a single edition of the Cricket World Cup?
+Chris Gayle
+AB de Villiers
+Rohit Sharma
+Eoin Morgan
+Chris Gayle
+Who has taken the most catches in the history of Test cricket?
+Mahela Jayawardene
+Rahul Dravid
+Mark Waugh
+Brian Lara
+Rahul Dravid
+Who has taken the most catches in the history of One Day Internationals?
+Ricky Ponting
+Sachin Tendulkar
+Mark Waugh
+Herschelle Gibbs
+Ricky Ponting
+Who is the only player to score a century on Test debut and a century in his last Test match?
+Sachin Tendulkar
+Greg Chappell
+Mohammad Azharuddin
+Gordon Greenidge
+Gordon Greenidge
+Who is the only bowler to take all ten wickets in a Test innings?
+Anil Kumble
+Jim Laker
+Muttiah Muralitharan
+Shane Warne
+Jim Laker
+Who is the only player to have scored a century in all three formats of international cricket?
+Rohit Sharma
+Chris Gayle
+Kumar Sangakkara
+Brendon McCullum
+Rohit Sharma
+Who is the only player to have taken a hat-trick in a T20 international?
+Brett Lee
+Lasith Malinga
+Rashid Khan
+Tim Southee
+Brett Lee
+Over how many days are test matches played?
+1
+5
+6
+9
+5
+Which team won the 2015 Cricket World Cup?
+South Africa
+India
+Pakistan
+Australia 
+Australia
+
+
+
+
+
+
+

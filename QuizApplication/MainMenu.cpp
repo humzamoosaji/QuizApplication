@@ -79,7 +79,6 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 			}
 		}
 	}
-
 	return selectedTopic;
 }
 

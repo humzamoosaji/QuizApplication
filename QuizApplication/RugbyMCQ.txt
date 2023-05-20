@@ -1,0 +1,360 @@
+What is the shape of a rugby ball?
+Round
+Square
+Oval
+Rectangular
+Oval
+In which country was rugby invented?
+England
+Scotland
+Ireland
+Wales
+England
+How many players are on a rugby union team?
+10
+12
+15
+20
+15
+Which position is responsible for throwing the ball into a lineout?
+Scrum-half
+Fly-half
+Hooker
+Lock
+Hooker
+What is a scrum?
+A type of kick
+A type of tackle
+A restart of play
+A type of pass
+A restart of play
+How long is a rugby union match?
+40 minutes
+60 minutes
+80 minutes
+90 minutes
+80 minutes
+How many points is a try worth in rugby union?
+2 points
+3 points
+5 points
+7 points
+7 points
+What is the term for when a player carries the ball over the opponent's goal line and touches it to the ground?
+Try
+Conversion
+Penalty
+Drop goal
+Try
+Which position typically wears the number 10 jersey?
+Fullback
+Scrum-half
+Fly-half
+Centre
+Fly-half
+How many points is a penalty kick worth?
+2 points
+3 points
+5 points
+7 points
+3 points
+What is the term for when a player kicks the ball and chases after it?
+Punt
+Drop kick
+Chip kick
+Grubber kick
+Grubber kick
+Which position typically wears the number 2 jersey?
+Hooker
+Prop
+Lock
+Flanker
+Hooker
+Which position typically wears the number 15 jersey?
+Fly-half
+Scrum-half
+Fullback
+Wing
+Fullback
+What is a maul?
+A type of scrum
+A type of tackle
+A restart of play
+A type of kick
+A type of tackle
+How many points is a drop goal worth?
+2 points
+3 points
+5 points
+7 points
+3 points
+Which position typically wears the number 9 jersey?
+Fullback
+Scrum-half
+Fly-half
+Centre
+Scrum-half
+Which country has won the most Rugby World Cup tournaments?
+England
+Australia
+New Zealand
+South Africa
+New Zealand
+What is the term for when a player is tackled and does not release the ball?
+Penalty
+Scrum
+Maul
+Ruck
+Ruck
+Which position typically wears the number 8 jersey?
+Flanker
+Lock
+Number 8
+Wing
+Number 8
+Which of the following is NOT a rugby union position?
+Prop
+Centre
+Goalkeeper
+Flanker
+Goalkeeper
+What is the term for a player passing the ball behind their back to a teammate?
+Dummy
+Flick pass
+Overhead pass
+Spiral pass
+Flick pass
+How many points is a conversion kick worth?
+2 points
+3 points
+5 points
+7 points
+3 points
+Which position typically wears the number 7 jersey?
+Flanker
+Lock
+Number 8
+Scrum-half
+Flanker
+Which country won the first Rugby World Cup in 1987?
+Australia
+England
+New Zealand
+South Africa
+New Zealand
+What is the term for when a player catches the ball and immediately kicks it?
+Drop kick
+Chip kick
+Grubber kick
+Punt
+Chip kick
+Which position typically wears the number 12 jersey?
+Fly-half
+Scrum-half
+Centre
+Wing
+Centre
+What is the term for a player scoring a try, conversion, and penalty kick in a single game?
+Grand Slam
+Hat trick
+Triple crown
+Golden boot
+Hat trick
+Which position typically wears the number 6 jersey?
+Flanker
+Lock
+Number 8
+Prop
+Flanker
+What is the term for when a player touches the ball down in their own try area?
+Drop out
+Scrum
+Lineout
+22-meter dropout
+Drop out
+Which country won the Rugby World Cup in 2019?
+England
+South Africa
+New Zealand
+Australia
+South Africa
+Which position typically wears the number 3 jersey?
+Prop
+Hooker
+Lock
+Flanker
+Prop
+What is the term for a player kicking the ball from their own half of the field and into touch in the opponent's half?
+Clearing kick
+Drop kick
+Chip kick
+Punt
+Clearing kick
+Which country has won the most Six Nations championships?
+England
+Ireland
+Scotland
+Wales
+Wales
+Which position typically wears the number 13 jersey?
+Fly-half
+Scrum-half
+Centre
+Wing
+Centre
+What is the term for when a player is tackled and brought to the ground, but releases the ball before hitting the ground?
+Penalty
+Knock-on
+Maul
+Ruck
+Ruck
+Which country has won the most Rugby Championship/Tri-Nations titles?
+Australia
+New Zealand
+South Africa
+Argentina
+New Zealand
+Which position typically wears the number 1 jersey?
+Prop
+Hooker
+Lock
+Flanker
+Prop
+What is the term for a player touching the ball down behind their own goal line and conceding a five-meter scrum to the opposing team?
+Knock-on
+Lineout
+22-meter dropout
+Own goal
+22-meter dropout
+Which country won the Rugby World Cup in 2015?
+Australia
+England
+New Zealand
+South Africa
+New Zealand
+Which position typically wears the number 2 jersey?
+Prop
+Hooker
+Lock
+Flanker
+Hooker
+What is the term for when a player dives over the try line and touches the ball down?
+Try
+Conversion
+Penalty kick
+Drop goal
+Try
+Which country won the most recent Women's Rugby World Cup in 2017?
+Canada
+England
+France
+New Zealand
+New Zealand
+Which position typically wears the number 9 jersey?
+Fly-half
+Scrum-half
+Centre
+Wing
+Scrum-half
+What is the term for a player kicking the ball from the ground after it has bounced?
+Drop kick
+Punt
+Grubber kick
+Up and under
+Grubber kick
+What is the term for when a player scores a try and then successfully kicks the conversion?
+Try and go
+Try and drop goal
+Try and penalty kick
+Try and conversion
+Try and conversion
+Which country won the most recent Rugby Championship in 2021?
+Australia
+New Zealand
+South Africa
+Argentina
+South Africa
+Which position typically wears the number 4 jersey?
+Prop
+Hooker
+Lock
+Flanker
+Lock
+What is the term for when a player is tackled and loses the ball forward?
+Knock-on
+Penalty
+Scrum
+Ruck
+Knock-on
+Which country won the most recent Six Nations championship in 2021?
+England
+France
+Ireland
+Wales
+Wales
+Which position typically wears the number 15 jersey?
+Fullback
+Wing
+Centre
+Scrum-half
+Fullback
+What is the term for when a player scores a try, conversion, penalty kick, and drop goal in a single game?
+Full house
+Grand Slam
+Hat trick
+Triple crown
+Full house
+Which country won the most recent Rugby Sevens World Cup in 2018?
+Fiji
+New Zealand
+South Africa
+United States
+Fiji
+Which position typically wears the number 10 jersey?
+Fly-half
+Scrum-half
+Hooker
+Lock
+Fly-half
+What is the term for when a player is tackled and both teams compete for the ball on the ground?
+Knock-on
+Penalty
+Scrum
+Ruck
+Ruck
+Which country has won the most Rugby World Cup tournaments?
+Australia
+England
+New Zealand
+South Africa
+New Zealand
+Which position typically wears the number 6 jersey?
+Prop
+Hooker
+Lock
+Flanker
+Flanker
+What is the term for a free kick awarded to the non-offending team after an opposing player commits a minor infringement?
+Penalty kick
+Scrum
+Lineout
+Quick tap
+Quick tap
+Which country won the most recent British and Irish Lions tour in 2017?
+Australia
+New Zealand
+South Africa
+United Kingdom
+New Zealand
+Which position typically wears the number 13 jersey?
+Fly-half
+Scrum-half
+Centre
+Fullback
+Centre
+What is the term for when a player throws the ball into a lineout?
+Throw-in
+Lineout kick
+Drop ball
+Knock-on
+Throw-in

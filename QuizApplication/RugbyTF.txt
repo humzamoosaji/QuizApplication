@@ -1,0 +1,236 @@
+Rugby was invented in England in the 19th century. 
+True
+False
+True
+A rugby match is divided into two halves, each lasting 40 minutes. 
+True
+False
+True
+The rugby ball used in matches must be oval-shaped. 
+True
+False
+True
+In rugby, a player is only considered offside if they are in front of the ball when it is kicked. 
+True
+False
+False
+The highest possible score a team can achieve from a single play in rugby is 7 points. 
+True
+False
+True
+The goal posts in rugby are positioned at the corners of the field. 
+True
+False
+False
+A try is worth 5 points in rugby. 
+True
+False
+True
+A rugby match can end in a tie. 
+True
+False
+True
+The team that scores the most points in a rugby match wins. 
+True
+False
+True
+The captain of a rugby team is allowed to talk to the referee during a match. 
+True
+False
+True
+In rugby, a forward pass is always illegal. 
+True
+False
+True
+A scrum is a way to restart play after a minor infringement. 
+True
+False
+False
+In rugby, a player can only pass the ball backwards. 
+True
+False
+False
+In rugby, a player can be substituted and then return to the match later. 
+True
+False
+True
+A rugby match can have a maximum of 15 players on each team. 
+True
+False
+True
+In rugby, a player is allowed to tackle an opponent above the shoulders. 
+True
+False
+False
+A penalty kick is worth 3 points in rugby. 
+True
+False
+True
+A rugby ball must be inflated to a specific pressure before a match. 
+True
+False
+True
+In rugby, a player can score a drop goal from anywhere on the field. 
+True
+False
+True
+The term "scrum" comes from the Latin word "scrumptious." 
+True
+False
+False
+In rugby, a try is scored when a player touches the ball down over the opponent's goal line. 
+True
+False
+True
+In rugby, a player can kick the ball in any direction. 
+True
+False
+True
+A yellow card in rugby means a player has been sent off for the remainder of the match. 
+True
+False
+False
+A red card in rugby means a player has been sent off for the remainder of the match. 
+True
+False
+True
+A rugby match is always played on a rectangular field. 
+True
+False
+False
+In rugby, a player is not allowed to pass the ball after being tackled. 
+True
+False
+True
+In rugby, a player is allowed to score a try by placing the ball against the opponent's goal post. 
+True
+False
+False
+The Rugby World Cup is held every 2 years. 
+True
+False
+False
+In rugby, the term "try line" refers to the line at the center of the field. 
+True
+False
+False
+In rugby, a team can win the match by having more tries than the opposition, even if they score fewer total points. 
+True
+False
+True
+In rugby, a conversion kick is taken after a try and is worth 2 points. 
+True
+False
+True
+A rugby ball must weigh between 380 and 420 grams. 
+True
+False
+True
+The term "scrum-half" refers to a player in the back line. 
+True
+False
+False
+A rugby match can only be officiated by one referee. 
+True
+False
+False
+The Rugby Championship is an annual international tournament featuring teams from South Africa, Australia, New Zealand, and Argentina. 
+True
+False
+True
+In rugby, a player can pass the ball by throwing it overhand. 
+True
+False
+False
+In rugby, a player can only tackle an opponent who is in possession of the ball. 
+True
+False
+False
+A rugby match can end early if one team has an insurmountable lead. 
+True
+False
+False
+The team that scores the first try in a rugby match is guaranteed to win. 
+True
+False
+False
+A "line-out" is a way to restart play after the ball has gone out of bounds. 
+True
+False
+True
+A rugby ball must have a circumference of between 58 and 62 centimeters. 
+True
+False
+True
+The term "hooker" refers to a player in the forward pack. 
+True
+False
+True
+In rugby, a player can score a penalty try if an opponent prevents them from scoring a try through illegal means. 
+True
+False
+True
+The Rugby World Cup was first held in 1987. 
+True
+False
+True
+In rugby, a player is allowed to tackle an opponent around the neck. 
+True
+False
+False
+A "ruck" is a phase of play where one or more players from each team are on their feet, in physical contact, and close around the ball on the ground. 
+True
+False
+True
+In rugby, a player can only score a try by touching the ball down with their hands. 
+True
+False
+False
+A "maul" is a phase of play where the ball is held by one or more players on their feet and one or more opponents bind onto them. 
+True
+False
+True
+In rugby, a player can score a drop goal by kicking the ball through the opponent's goal posts during open play. 
+True
+False
+True
+In rugby, a player can catch a kicked ball if they are behind their own goal line and the ball was kicked from outside the opponent's 22-meter line. 
+True
+False
+True
+The Six Nations is an annual international rugby union competition featuring teams from England, France, Ireland, Italy, Scotland, and Wales. 
+True
+False
+True
+In rugby, a player can only be substituted due to injury. 
+True
+False
+False
+A rugby match can only be played during the daytime. 
+True
+False
+False
+In rugby, a player can score a penalty goal by kicking the ball over the opponent's crossbar and between the uprights during open play. 
+True
+False
+True
+In rugby, a player can receive a yellow card for a serious foul play, which means they must leave the field for 10 minutes. 
+True
+False
+True
+In rugby, a team can only score a maximum of 7 points from a single play. 
+True
+False
+False
+In rugby, a player can kick the ball forward and then immediately run onto it and continue play. 
+True
+False
+False
+In rugby, a player is allowed to throw the ball forward if they are behind the ball. 
+True
+False
+False
+In rugby, a team can win a scrum if the opposing team collapses the scrum. 
+True
+False
+True
