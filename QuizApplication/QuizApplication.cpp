@@ -52,6 +52,7 @@ int main()
                 vector<MultipleChoiceQuestion> mcquestions = mcqbank.getQuestions(NUM_QUESTIONS/2, fileName);
                 for (int i = 0; i < mcquestions.size(); i++)
                 {
+                    MultipleChoiceQuestion* currentQuestion = &mcquestions[i];
                     sf::Event event;
                     while (window.pollEvent(event))
                     {
@@ -61,16 +62,15 @@ int main()
                         }
                     }
                     window.clear();
-                    ui.displayGameInfo(window, mcquestions[i], score, currentLevel, questionNumber, NUM_QUESTIONS, selectedTopic);
-                    ui.displayQuestion(window, mcquestions[i], selectedTopic);
-                    ui.displayAnswerOptions(window, mcquestions[i]);
-                    string userResponse = ui.handleUserInteraction(window, timer, mcquestions[i], ui, selectedTopic);
+                    ui.displayGameInfo(window, currentQuestion, score, currentLevel, questionNumber, NUM_QUESTIONS, selectedTopic);
+                    ui.displayQuestion(window, currentQuestion, selectedTopic);
+                    ui.displayAnswerOptions(window, currentQuestion);
+                    string userResponse = ui.handleUserInteraction(window, timer, currentQuestion, ui, selectedTopic);
                     window.display();
                     window.clear();
-                    if (ui.displayFeedback(window, userResponse, mcquestions[i]) == true)
+                    if (ui.displayFeedback(window, userResponse, currentQuestion) == true)
                         score++;
                     questionNumber++;
-                    window.display();
                     sf::sleep(sf::milliseconds(1000));
                 }
                 isMultipleChoice = false;
@@ -78,6 +78,7 @@ int main()
                 vector<TrueFalseQuestion> tfquestions = tfbank.getQuestions(NUM_QUESTIONS / 2, fileName);
                 for (int i = 0; i < tfquestions.size(); i++)
                 {
+                    TrueFalseQuestion* currentQuestion = &tfquestions[i];
                     sf::Event event;
                     while (window.pollEvent(event))
                     {
@@ -87,13 +88,12 @@ int main()
                         }
                     }
                     window.clear();
-                    ui2.displayQuestion(window, tfquestions[i], selectedTopic);
-                    ui2.displayAnswerOptions(window, tfquestions[i]);
-                    string userResponse = ui2.handleUserInteraction(window, timer, tfquestions[i], ui2, selectedTopic);
+                    ui2.displayQuestion(window, currentQuestion, selectedTopic);
+                    ui2.displayAnswerOptions(window, currentQuestion);
+                    string userResponse = ui2.handleUserInteraction(window, timer, currentQuestion, ui2, selectedTopic);
                     window.display();
                     window.clear();
-                    ui2.displayFeedback(window, userResponse, tfquestions[i]);
-                    window.display();
+                    ui2.displayFeedback(window, userResponse, currentQuestion);
                     sf::sleep(sf::milliseconds(3500));
                 }
             }

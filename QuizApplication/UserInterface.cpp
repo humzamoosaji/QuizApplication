@@ -8,7 +8,7 @@
 using namespace std;
 
 template<class QuestionType>
-void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, QuestionType q, MainMenu::QuizTopic selectedTopic)
+void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, QuestionType* q, MainMenu::QuizTopic selectedTopic)
 {
     sf::Font font;
     font.loadFromFile("Trajan Bold.ttf");
@@ -16,7 +16,7 @@ void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, Ques
     sf::Text questionText;
     questionText.setFont(font);
     questionText.setCharacterSize(32);
-    questionText.setString(q.question);
+    questionText.setString(q->question);
 
     // Set the maximum width of the text to be the width of the window
     float maxWidth = window.getSize().x - 100; // assuming 100 pixels padding on either side
@@ -64,8 +64,9 @@ void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, Ques
     window.draw(questionText);
 }
 
+
 template<class QuestionType>
-void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window, QuestionType q)
+void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window, QuestionType* q)
 {
     sf::Font font;
     font.loadFromFile("Trajan Bold.ttf");
@@ -73,16 +74,15 @@ void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window,
     int width = window.getSize().x;
     int height = window.getSize().y;
 
-    for (int i = 0; i < q.answers.size(); i++)
+    for (int i = 0; i < q->answers.size(); i++)
     {
-
         sf::Text answerText;
         answerText.setFont(font);
         answerText.setCharacterSize(28);
-        answerText.setString(q.answers[i]);
+        answerText.setString(q->answers[i]);
         answerText.setOutlineColor(sf::Color::Black);
         answerText.setOutlineThickness(5);
-        answerText.setPosition(sf::Vector2f(width / 3, height / 2 + i * 50 - 100));
+        answerText.setPosition(sf::Vector2f(width / 3.f, height / 2.f + i * 50.f - 100.f));
 
         // Check if the mouse is hovering over an answer
         if (answerText.getGlobalBounds().contains(sf::Vector2f(sf::Mouse::getPosition(window))))
@@ -97,11 +97,8 @@ void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window,
     }
 }
 
-
-
-
 template<class QuestionType>
-string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& window, sf::Time timerTime, QuestionType q, UserInterface ui, MainMenu::QuizTopic selectedTopic)
+string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& window, sf::Time timerTime, QuestionType* q, UserInterface<QuestionType>& ui, MainMenu::QuizTopic selectedTopic)
 {
     sf::Clock clock;
     sf::Text timeText;
@@ -116,14 +113,14 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
     bool answered = false;
     string selectedAnswer = "";
     int buttonSpacing = 50;
-    int buttonYPosition = height / 2 - ((q.answers.size() * buttonSpacing) / 2);
+    int buttonYPosition = height / 2 - ((q->answers.size() * buttonSpacing) / 2);
     if (typeid(QuestionType) == typeid(TrueFalseQuestion)) { buttonYPosition -= 50; }
 
     sf::Clock timer;
     while (!answered && clock.getElapsedTime() < timerTime) {
         sf::Event event;
         sf::Time elapsed = clock.getElapsedTime();
-        int remainingTime = static_cast<int>(timerTime.asSeconds() - elapsed.asSeconds());
+        int remainingTime = timerTime.asSeconds() - elapsed.asSeconds();
         timeText.setString("Time remaining: " + to_string(remainingTime) + "s");
 
         window.clear();
@@ -149,11 +146,11 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
                     mousePosition.y >= exitButtonY && mousePosition.y < exitButtonY + exitButtonHeight) {
                     window.close();
                 }
-                for (int j = 0; j < q.answers.size(); j++) {
+                for (int j = 0; j < q->answers.size(); j++) {
                     int buttonTop = buttonYPosition + j * buttonSpacing;
                     int buttonBottom = buttonTop + 40;
                     if (event.mouseButton.y >= buttonTop && event.mouseButton.y < buttonBottom) {
-                        selectedAnswer = q.answers[j];
+                        selectedAnswer = q->answers[j];
                         answered = true;
                         break;
                     }
@@ -164,9 +161,8 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
     return selectedAnswer;
 }
 
-
-template <class QuestionType>
-bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType q)
+template<class QuestionType>
+bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType* q)
 {
     bool correct = false;
     // Load the gif textures
@@ -176,13 +172,9 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
     incorrectTexture.loadFromFile("incorrect.gif");
 
     sf::Sprite backgroundSprite;
-    //sf::SoundBuffer buffer;
-    //buffer.loadFromFile((userAnswer == q.correctAnswer) ? "correct.mp3" : "incorrect.mp3");
-    //sf::Sound sound;
-    //sound.setBuffer(buffer);
-
-    //sound.setBuffer(buffer);
-    if (userAnswer == q.correctAnswer) {
+    sf::SoundBuffer buffer;
+    buffer.loadFromFile((userAnswer == q->correctAnswer) ? "correct.wav" : "incorrect.wav");
+    if (userAnswer == q->correctAnswer) {
         backgroundSprite.setTexture(correctTexture);
         correct = true;
     }
@@ -202,8 +194,8 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
     sf::Text feedbackText;
     feedbackText.setFont(font);
     feedbackText.setCharacterSize(24);
-    feedbackText.setFillColor((userAnswer == q.correctAnswer) ? sf::Color::Green : sf::Color::Red);
-    feedbackText.setString((userAnswer == q.correctAnswer) ? "CORRECT!" : "INCORRECT! The correct answer is: " + q.correctAnswer);
+    feedbackText.setFillColor((userAnswer == q->correctAnswer) ? sf::Color::Green : sf::Color::Red);
+    feedbackText.setString((userAnswer == q->correctAnswer) ? "CORRECT!" : "INCORRECT! The correct answer is: " + q->correctAnswer);
 
     float maxWidth = window.getSize().x - 200; // assuming 100 pixels padding on either side
     feedbackText.setPosition((maxWidth - feedbackText.getGlobalBounds().width) / 2.f + 100, 100);
@@ -220,13 +212,17 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
         secondLine = textString.substr(index + 1);
         feedbackText.setString(firstLine + "\n" + secondLine);
     }
-    // sound.play();
     window.draw(feedbackText);
+    sf::Sound sound(buffer);
+    window.display();
+    sound.play();
+    // This loop is necessary for the audio to play
+    while (sound.getStatus() == sf::Music::Playing) {}
     return correct;
 }
 
 template <class QuestionType>
-void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, QuestionType question, int score, int level, int questionNumber, int numQuestions, MainMenu::QuizTopic selectedTopic)
+void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, const QuestionType* question, int score, int level, int questionNumber, int numQuestions, const MainMenu::QuizTopic& selectedTopic)
 {
     sf::Font font;
     font.loadFromFile("impact.ttf");
@@ -254,7 +250,7 @@ void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, Ques
     sf::Text questionNumberText;
     questionNumberText.setFont(font);
     questionNumberText.setCharacterSize(28);
-    questionNumberText.setString("Question " + std::to_string(questionNumber) + "/" + std::to_string(numQuestions*numLevels));
+    questionNumberText.setString("Question " + std::to_string(questionNumber) + "/" + std::to_string(numQuestions * numLevels));
     questionNumberText.setPosition(sf::Vector2f(width / 2 - 100, 20));
     window.draw(questionNumberText);
 }
