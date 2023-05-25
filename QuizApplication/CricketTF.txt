@@ -70,7 +70,7 @@ A hat-trick in cricket refers to a bowler taking three wickets in consecutive de
 True
 False
 True
-The term "silly point" refers to a fielding position close to the batsman on the off side.
+The term silly point refers to a fielding position close to the batsman on the off side.
 True
 False
 True
@@ -114,7 +114,7 @@ A spinner is a type of bowler who specializes in slow, spinning deliveries.
 True
 False
 True
-A cricket match can end in a "no result" if it is abandoned due to external factors like rain or bad light.
+A cricket match can end in a no result if it is abandoned due to external factors like rain or bad light.
 True
 False
 True
@@ -122,7 +122,7 @@ A fielder can catch the ball after it has touched the ground and still dismiss t
 True
 False
 False
-The term "follow-on" is used when a team chooses to bat first after winning the toss. 
+The term follow-on is used when a team chooses to bat first after winning the toss. 
 True
 False
 False
@@ -130,7 +130,7 @@ The highest individual score in One Day Internationals (ODIs) is 264 runs.
 True
 False
 True
-A "dot ball" in cricket refers to a delivery in which the batsman does not score any runs. 
+A dot ball in cricket refers to a delivery in which the batsman does not score any runs. 
 True
 False
 True
@@ -138,7 +138,7 @@ The ICC World Twenty20 tournament is played every two years.
 True
 False
 False
-The "off side" in cricket refers to the half of the field opposite to where the batsman stands.
+The off side in cricket refers to the half of the field opposite to where the batsman stands.
 True
 False
 True
@@ -146,7 +146,7 @@ A cricket match can be won by a team without losing a single wicket.
 True
 False
 True
-The term "maiden" refers to a bowler taking five wickets in an innings.
+The term maiden refers to a bowler taking five wickets in an innings.
 True
 False
 False
@@ -162,7 +162,7 @@ The third umpire can overrule the on-field umpire's decision based on TV replays
 True
 False
 True
-The term "nightwatchman" refers to a batsman who comes in to bat towards the end of the day's play. 
+The term nightwatchman refers to a batsman who comes in to bat towards the end of the day's play. 
 True
 False
 True
@@ -170,11 +170,11 @@ The highest individual score in T20 Internationals is 172 runs.
 True
 False
 True
-A "free hit" is awarded to the batsman following a no-ball. 
+A free hit is awarded to the batsman following a no-ball. 
 True
 False
 True
-The "crease" in cricket refers to the line on which the bowler delivers the ball.
+The crease in cricket refers to the line on which the bowler delivers the ball.
 True
 False
 False
@@ -182,11 +182,11 @@ A batsman can be given out if the ball hits the fielder's helmet before being ca
 True
 False
 False
-A cricket match can end in a "tiebreaker" if the scores are tied even after a Super Over.
+A cricket match can end in a tiebreaker if the scores are tied even after a Super Over.
 True
 False
 False
-A "spinner" is a type of bowler who primarily bowls fast deliveries. 
+A spinner is a type of bowler who primarily bowls fast deliveries. 
 True
 False
 False
@@ -194,7 +194,7 @@ The highest individual score in international Test cricket is 400 not out.
 True
 False
 True
-A "run out" in cricket occurs when the batsman is dismissed while attempting to complete a run. 
+A run out in cricket occurs when the batsman is dismissed while attempting to complete a run. 
 True
 False
 True
@@ -202,7 +202,7 @@ A cricket match can end due to bad light conditions if the umpires deem it unsaf
 True
 False
 True
-A "golden duck" in cricket refers to a batsman getting out on the first ball they face. 
+A golden duck in cricket refers to a batsman getting out on the first ball they face. 
 True
 False
 True
@@ -210,7 +210,7 @@ A batsman can be given out if the ball hits their gloves and is caught by a fiel
 True
 False
 True
-The term "googly" refers to a type of delivery bowled by a fast bowler. 
+The term googly refers to a type of delivery bowled by a fast bowler. 
 True
 False
 False
@@ -222,15 +222,15 @@ A batsman can be given out if the ball hits the fielder's cap and is caught.
 True
 False
 False
-The term "sixer" is used to describe a delivery that goes for six runs. 
+The term sixer is used to describe a delivery that goes for six runs. 
 True
 False
 False
-The "square leg" is a fielding position in front of the batsman on the leg side.
+The square leg is a fielding position in front of the batsman on the leg side.
 True
 False
 True
-The term "stumping" in cricket refers to the wicketkeeper removing the bails with the ball, dismissing the batsman. 
+The term stumping in cricket refers to the wicketkeeper removing the bails with the ball, dismissing the batsman. 
 True
 False
 True
@@ -238,7 +238,7 @@ A batsman can be given out if they handle the ball intentionally without the per
 True
 False
 True
-A "free hit" is awarded to the batsman following a wide ball. 
+A free hit is awarded to the batsman following a wide ball. 
 True
 False
 False

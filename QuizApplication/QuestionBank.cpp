@@ -1,5 +1,6 @@
 #include "QuestionBank.h"
 #include <cstdlib>
+#include <ctime>
 #include <iostream>
 #include <fstream>
 using namespace std;

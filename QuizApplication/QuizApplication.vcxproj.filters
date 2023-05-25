@@ -30,6 +30,9 @@
     <ClCompile Include="GlobalVariables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TicTacToe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QuestionBank.h">
@@ -44,10 +47,79 @@
     <ClInclude Include="GlobalVariables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TicTacToe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="FootballMCQ.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="CricketMCQ.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="CricketTF.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="FootballTF.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="RugbyMCQ.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="RugbyTF.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="BebasNeue-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="Billionstar.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="impact.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="Trajan Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="background_cricket.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="background_football.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="background_rugby.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="background1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="correct.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="incorrect.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="correct.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="incorrect.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="timer.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -1,18 +1,16 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#define MAX_NUMBER_OF_ITEMS 4
+#define MAX_NUMBER_OF_ITEMS 5
 
 using namespace std;
 
 class MainMenu
 {
 public:
-	enum QuizTopic { None, Football, Cricket, Rugby };
-	QuizTopic selectedTopic;
+	enum QuizTopic { None, Football, Cricket, Rugby, TicTacToe };
 	QuizTopic getSelectedTopic(sf::RenderWindow& window);
-	string getFileName(QuizTopic, bool);
+	string getFileName(QuizTopic topic, bool isMCQ);
 	MainMenu(float width, float height);
-	~MainMenu();
 
 	void draw(sf::RenderWindow& window);
 

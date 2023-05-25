@@ -1,27 +1,22 @@
 #include "MainMenu.h"
-
+#include <iostream>
 using namespace std;
 
 MainMenu::MainMenu(float width, float height)
 {
-	if (!font.loadFromFile("BebasNeue-Regular.ttf"))
-	{
-		// handle error
-	}
+	font.loadFromFile("BebasNeue-Regular.ttf");
 
-	if (!texture.loadFromFile("background.jpg"))
-	{
-		exit(1);
-	}
+	texture.loadFromFile("background.jpg");
 
 	sprite.setTexture(texture);
 	sprite.setScale(width / texture.getSize().x, height / texture.getSize().y);
 
 	string menuStrings[] = {
-	"WELCOME! BEGIN BY CHOOSING A SPORT",
-	"FOOTBALL",
-	"CRICKET",
-	"RUGBY"
+		"WELCOME! BEGIN BY CHOOSING A SPORT",
+		"FOOTBALL",
+		"CRICKET",
+		"RUGBY",
+		"TIC TAC TOE"
 	};
 	int numItems = sizeof(menuStrings) / sizeof(menuStrings[0]);
 
@@ -36,12 +31,6 @@ MainMenu::MainMenu(float width, float height)
 		menu[i].setString(menuStrings[i]);
 		menu[i].setPosition(sf::Vector2f(width / 3, height / 2 + i * 50 - 100));
 	}
-
-}
-
-
-MainMenu::~MainMenu()
-{
 }
 
 void MainMenu::draw(sf::RenderWindow& window)
@@ -56,6 +45,7 @@ void MainMenu::draw(sf::RenderWindow& window)
 MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 {
 	sf::Event event;
+	MainMenu::QuizTopic selected = MainMenu::None;
 	while (window.pollEvent(event))
 	{
 		if (event.type == sf::Event::Closed)
@@ -64,22 +54,17 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 		}
 		else if (event.type == sf::Event::MouseButtonPressed)
 		{
-			if (event.mouseButton.button == sf::Mouse::Left)
+			for (int i = 1; i < MAX_NUMBER_OF_ITEMS; i++)
 			{
-				// Check if any menu item was clicked
-				for (int i = 1; i < MAX_NUMBER_OF_ITEMS; i++)
+				if (menu[i].getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y))
 				{
-					if (menu[i].getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y))
-					{
-						// Set the selected quiz topic based on the clicked menu item
-						selectedTopic = static_cast<MainMenu::QuizTopic>(i);
-						break;
-					}
+					selected = MainMenu::QuizTopic(i);
+					break;
 				}
 			}
 		}
 	}
-	return selectedTopic;
+	return selected;
 }
 
 string MainMenu::getFileName(QuizTopic topic, bool isMCQ)
@@ -93,6 +78,8 @@ string MainMenu::getFileName(QuizTopic topic, bool isMCQ)
 		return "Cricket" + extension;
 	case MainMenu::Rugby:
 		return "Rugby" + extension;
+	case MainMenu::TicTacToe:
+		return "TicTacToe";
 	default:
 		return "";
 	}

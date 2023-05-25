@@ -14,5 +14,6 @@ public:
 	bool displayFeedback(sf::RenderWindow&, string, QuestionType*);
 	void displayGameInfo(sf::RenderWindow&, const QuestionType*, int, int, int, int, const MainMenu::QuizTopic&);
 	void displayNavigationButtons(sf::RenderWindow&);
+	string displayEndGameScreen(sf::RenderWindow&, int);
 };
 

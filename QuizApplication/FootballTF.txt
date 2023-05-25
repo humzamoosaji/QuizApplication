@@ -1,4 +1,4 @@
-Cristiano Ronaldo has won the Ballon d'Or award more times than Lionel Messi.
+Cristiano Ronaldo has won the Ballon dOr award more times than Lionel Messi.
 True
 False
 False
@@ -34,7 +34,7 @@ The FIFA Club World Cup features teams from all six continental confederations.
 True
 False
 True
-The World Cup Golden Boot is awarded to the tournament's best goalkeeper.
+The World Cup Golden Boot is awarded to the tournaments best goalkeeper.
 True
 False
 False
@@ -46,7 +46,7 @@ The European Golden Shoe is awarded to the top goalscorer in the UEFA Champions 
 True
 False
 False
-The FIFA Women's World Cup is held every three years.
+The FIFA Womens World Cup is held every three years.
 True
 False
 False
@@ -62,7 +62,7 @@ The FIFA World Cup has been canceled only once in its history.
 True
 False
 False
-The UEFA Europa League winner automatically qualifies for the following season's Champions League.
+The UEFA Europa League winner automatically qualifies for the following seasons Champions League.
 True
 False
 True

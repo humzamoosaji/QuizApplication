@@ -119,14 +119,17 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SFML_STATIC;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-audio-s-d.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;flac.lib;ogg.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-main-d.lib;opengl32.lib;openal32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\moosa\Dropbox\My PC (LAPTOP-SKKKCC2G)\Downloads\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -134,16 +137,44 @@
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="QuestionBank.cpp" />
     <ClCompile Include="QuizApplication.cpp" />
+    <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GlobalVariables.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="QuestionBank.h" />
+    <ClInclude Include="TicTacToe.h" />
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="CricketMCQ.txt" />
+    <Text Include="CricketTF.txt" />
     <Text Include="FootballMCQ.txt" />
+    <Text Include="FootballTF.txt" />
+    <Text Include="RugbyMCQ.txt" />
+    <Text Include="RugbyTF.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf" />
+    <Font Include="BebasNeue-Regular.ttf" />
+    <Font Include="Billionstar.ttf" />
+    <Font Include="impact.ttf" />
+    <Font Include="Trajan Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.jpg" />
+    <Image Include="background1.jpg" />
+    <Image Include="background_cricket.jpg" />
+    <Image Include="background_football.jpg" />
+    <Image Include="background_rugby.jpg" />
+    <Image Include="correct.gif" />
+    <Image Include="incorrect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="correct.wav" />
+    <Media Include="incorrect.wav" />
+    <Media Include="timer.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -111,22 +111,32 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
     int height = window.getSize().y;
     int width = window.getSize().x;
     bool answered = false;
+    
     string selectedAnswer = "";
+    
     int buttonSpacing = 50;
     int buttonYPosition = height / 2 - ((q->answers.size() * buttonSpacing) / 2);
+    
     if (typeid(QuestionType) == typeid(TrueFalseQuestion)) { buttonYPosition -= 50; }
-
+    
+    sf::SoundBuffer buffer;
+    buffer.loadFromFile("timer.wav");
+    
     sf::Clock timer;
-    while (!answered && clock.getElapsedTime() < timerTime) {
-        sf::Event event;
+
+    sf::Sound sound(buffer);
+    sound.play();
+
+    while (!answered && sound.getStatus() == sf::Music::Playing && sound.getPlayingOffset() < timerTime) {
         sf::Time elapsed = clock.getElapsedTime();
+        sf::Event event;
         int remainingTime = timerTime.asSeconds() - elapsed.asSeconds();
         timeText.setString("Time remaining: " + to_string(remainingTime) + "s");
 
         window.clear();
         ui.displayQuestion(window, q, selectedTopic);
         ui.displayAnswerOptions(window, q);
-        timeText.setPosition(window.getSize().x - 450, window.getSize().y - 850);
+        timeText.setPosition(window.getSize().x - timeText.getLocalBounds().width - 50, window.getSize().y - 850);
         window.draw(timeText);
         ui.displayGameInfo(window, q, score, currentLevel, questionNumber, NUM_QUESTIONS, selectedTopic);
         ui.displayNavigationButtons(window);
@@ -139,11 +149,13 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
             else if (event.type == sf::Event::MouseButtonPressed) {
                 sf::Vector2f mousePosition = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
                 int exitButtonX = window.getSize().x - 250;
-                int exitButtonY = window.getSize().y - 100;
-                int exitButtonWidth = 200;
-                int exitButtonHeight = 50;
-                if (mousePosition.x >= exitButtonX && mousePosition.x < exitButtonX + exitButtonWidth &&
-                    mousePosition.y >= exitButtonY && mousePosition.y < exitButtonY + exitButtonHeight) {
+                int menuButtonX = 50;
+                int ButtonY = window.getSize().y - 100;
+                int ButtonWidth = 200;
+                int ButtonHeight = 50;
+                if (mousePosition.x >= exitButtonX && mousePosition.x < exitButtonX + ButtonWidth &&
+                    mousePosition.y >= ButtonY && mousePosition.y < ButtonY + ButtonHeight)
+                {
                     window.close();
                 }
                 for (int j = 0; j < q->answers.size(); j++) {
@@ -264,18 +276,6 @@ void UserInterface<QuestionType>::displayNavigationButtons(sf::RenderWindow& win
     int width = window.getSize().x;
     int height = window.getSize().y;
 
-    // Main Menu Button
-    sf::RectangleShape mainMenuButton(sf::Vector2f(200, 50));
-    mainMenuButton.setFillColor(sf::Color::Black);
-    mainMenuButton.setPosition(sf::Vector2f(50, height - 100));
-
-    sf::Text mainMenuText;
-    mainMenuText.setFont(font);
-    mainMenuText.setCharacterSize(36);
-    mainMenuText.setString("Main Menu");
-    mainMenuText.setFillColor(sf::Color::White);
-    mainMenuText.setPosition(sf::Vector2f(60, height - 95));
-
     // Exit Button
     sf::RectangleShape exitButton(sf::Vector2f(200, 50));
     exitButton.setFillColor(sf::Color::Black);
@@ -289,10 +289,89 @@ void UserInterface<QuestionType>::displayNavigationButtons(sf::RenderWindow& win
     exitText.setPosition(sf::Vector2f(width - 220, height - 95));
 
     // Draw the buttons and text
-    window.draw(mainMenuButton);
-    window.draw(mainMenuText);
     window.draw(exitButton);
     window.draw(exitText);
+}
+
+template <class QuestionType>
+string UserInterface<QuestionType>::displayEndGameScreen(sf::RenderWindow& window, int score)
+{
+    sf::Font font;
+    font.loadFromFile("impact.ttf");
+
+    sf::Text endGameText;
+    endGameText.setFont(font);
+    endGameText.setCharacterSize(24);
+    string scoreString = to_string((score / (NUM_QUESTIONS*3)) * 100);
+    string endGameMessage = "Game Over! You scored: " + scoreString + "%";
+    endGameText.setString(endGameMessage);
+    endGameText.setPosition(window.getSize().x / 2 - endGameText.getGlobalBounds().width / 2,
+        window.getSize().y / 2 - endGameText.getGlobalBounds().height);
+
+    sf::Text mainMenuButtonLabel;
+    mainMenuButtonLabel.setFont(font);
+    mainMenuButtonLabel.setCharacterSize(18);
+    mainMenuButtonLabel.setString("Main Menu");
+    mainMenuButtonLabel.setPosition(window.getSize().x / 2 - mainMenuButtonLabel.getGlobalBounds().width / 2,
+        window.getSize().y / 2 + mainMenuButtonLabel.getGlobalBounds().height * 2);
+
+    sf::Text exitButtonLabel;
+    exitButtonLabel.setFont(font);
+    exitButtonLabel.setCharacterSize(18);
+    exitButtonLabel.setString("Exit");
+    exitButtonLabel.setPosition(window.getSize().x / 2 - exitButtonLabel.getGlobalBounds().width / 2,
+        window.getSize().y / 2 + exitButtonLabel.getGlobalBounds().height * 4);
+
+    sf::RectangleShape mainMenuButton;
+    mainMenuButton.setSize(sf::Vector2f(mainMenuButtonLabel.getGlobalBounds().width + 10,
+        mainMenuButtonLabel.getGlobalBounds().height + 10));
+    mainMenuButton.setPosition(window.getSize().x / 2 - mainMenuButton.getGlobalBounds().width / 2,
+        window.getSize().y / 2 + mainMenuButtonLabel.getGlobalBounds().height * 2);
+    mainMenuButton.setFillColor(sf::Color::Green);
+
+    sf::RectangleShape exitButton;
+    exitButton.setSize(sf::Vector2f(exitButtonLabel.getGlobalBounds().width + 10,
+        exitButtonLabel.getGlobalBounds().height + 10));
+    exitButton.setPosition(window.getSize().x / 2 - exitButton.getGlobalBounds().width / 2,
+        window.getSize().y / 2 + exitButtonLabel.getGlobalBounds().height * 4);
+    exitButton.setFillColor(sf::Color::Red);
+
+    bool endGameScreenActive = true;
+    while (endGameScreenActive)
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+            {
+                window.close();
+                return "exit";
+            }
+            else if (event.type == sf::Event::MouseButtonPressed)
+            {
+                if (mainMenuButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y))
+                {
+                    return "main menu";
+                }
+
+                if (exitButton.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y))
+                {
+                    window.close();
+                    return "exit";
+                }
+            }
+        }
+
+        window.clear();
+        window.draw(endGameText);
+        window.draw(mainMenuButton);
+        window.draw(mainMenuButtonLabel);
+        window.draw(exitButton);
+        window.draw(exitButtonLabel);
+        window.display();
+    }
+
+    return "restart";
 }
 
 

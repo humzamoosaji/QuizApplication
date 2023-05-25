@@ -74,11 +74,11 @@ In rugby, a player can score a drop goal from anywhere on the field.
 True
 False
 True
-The term "scrum" comes from the Latin word "scrumptious." 
+The term scrum comes from the Latin word scrumptious. 
 True
 False
 False
-In rugby, a try is scored when a player touches the ball down over the opponent's goal line. 
+In rugby, a try is scored when a player touches the ball down over the opponents goal line. 
 True
 False
 True
@@ -102,7 +102,7 @@ In rugby, a player is not allowed to pass the ball after being tackled.
 True
 False
 True
-In rugby, a player is allowed to score a try by placing the ball against the opponent's goal post. 
+In rugby, a player is allowed to score a try by placing the ball against the opponents goal post. 
 True
 False
 False
@@ -110,7 +110,7 @@ The Rugby World Cup is held every 2 years.
 True
 False
 False
-In rugby, the term "try line" refers to the line at the center of the field. 
+In rugby, the term try line refers to the line at the center of the field. 
 True
 False
 False
@@ -126,7 +126,7 @@ A rugby ball must weigh between 380 and 420 grams.
 True
 False
 True
-The term "scrum-half" refers to a player in the back line. 
+The term scrum-half refers to a player in the back line. 
 True
 False
 False
@@ -154,7 +154,7 @@ The team that scores the first try in a rugby match is guaranteed to win.
 True
 False
 False
-A "line-out" is a way to restart play after the ball has gone out of bounds. 
+A line-out is a way to restart play after the ball has gone out of bounds. 
 True
 False
 True
@@ -162,7 +162,7 @@ A rugby ball must have a circumference of between 58 and 62 centimeters.
 True
 False
 True
-The term "hooker" refers to a player in the forward pack. 
+The term hooker refers to a player in the forward pack. 
 True
 False
 True
@@ -178,7 +178,7 @@ In rugby, a player is allowed to tackle an opponent around the neck.
 True
 False
 False
-A "ruck" is a phase of play where one or more players from each team are on their feet, in physical contact, and close around the ball on the ground. 
+A ruck is a phase of play where one or more players from each team are on their feet, in physical contact, and close around the ball on the ground. 
 True
 False
 True
@@ -186,15 +186,15 @@ In rugby, a player can only score a try by touching the ball down with their han
 True
 False
 False
-A "maul" is a phase of play where the ball is held by one or more players on their feet and one or more opponents bind onto them. 
+A maul is a phase of play where the ball is held by one or more players on their feet and one or more opponents bind onto them. 
 True
 False
 True
-In rugby, a player can score a drop goal by kicking the ball through the opponent's goal posts during open play. 
+In rugby, a player can score a drop goal by kicking the ball through the opponents goal posts during open play. 
 True
 False
 True
-In rugby, a player can catch a kicked ball if they are behind their own goal line and the ball was kicked from outside the opponent's 22-meter line. 
+In rugby, a player can catch a kicked ball if they are behind their own goal line and the ball was kicked from outside the opponents 22-meter line. 
 True
 False
 True
@@ -210,7 +210,7 @@ A rugby match can only be played during the daytime.
 True
 False
 False
-In rugby, a player can score a penalty goal by kicking the ball over the opponent's crossbar and between the uprights during open play. 
+In rugby, a player can score a penalty goal by kicking the ball over the opponents crossbar and between the uprights during open play. 
 True
 False
 True

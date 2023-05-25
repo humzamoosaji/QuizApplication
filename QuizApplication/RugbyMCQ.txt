@@ -40,7 +40,7 @@ How many points is a try worth in rugby union?
 5 points
 7 points
 7 points
-What is the term for when a player carries the ball over the opponent's goal line and touches it to the ground?
+What is the term for when a player carries the ball over the opponents goal line and touches it to the ground?
 Try
 Conversion
 Penalty
@@ -184,7 +184,7 @@ Hooker
 Lock
 Flanker
 Prop
-What is the term for a player kicking the ball from their own half of the field and into touch in the opponent's half?
+What is the term for a player kicking the ball from their own half of the field and into touch in the opponents half?
 Clearing kick
 Drop kick
 Chip kick
@@ -244,7 +244,7 @@ Conversion
 Penalty kick
 Drop goal
 Try
-Which country won the most recent Women's Rugby World Cup in 2017?
+Which country won the most recent Womens Rugby World Cup in 2017?
 Canada
 England
 France
