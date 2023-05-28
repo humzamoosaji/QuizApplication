@@ -2,8 +2,8 @@
 #include <string>
 #include "SFML/Graphics.hpp"
 #include <SFML/Audio.hpp>
-#include "GlobalVariables.h"
 #include <iostream>
+#include "GlobalVariables.h"
 
 using namespace std;
 
@@ -18,13 +18,11 @@ void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, Ques
     questionText.setCharacterSize(32);
     questionText.setString(q->question);
 
-    // Set the maximum width of the text to be the width of the window
-    float maxWidth = window.getSize().x - 100; // assuming 100 pixels padding on either side
+    float maxWidth = window.getSize().x - 100;
     questionText.setOutlineThickness(5);
     questionText.setOutlineColor(sf::Color::Black);
     questionText.setFillColor(sf::Color::White);
 
-    // Scale the text if it is wider than the window
     if (questionText.getGlobalBounds().width >= maxWidth) {
         float scaleFactor = maxWidth / questionText.getGlobalBounds().width;
         questionText.setScale(scaleFactor, scaleFactor);
@@ -33,7 +31,6 @@ void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, Ques
     int width = window.getSize().x;
     int height = window.getSize().y;
 
-    // Load background image based on the selected topic
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
 
@@ -47,14 +44,12 @@ void UserInterface<QuestionType>::displayQuestion(sf::RenderWindow& window, Ques
         backgroundTexture.loadFromFile("background_rugby.jpg");
     }
 
-    // Set the background sprite properties
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setScale(
         window.getSize().x / backgroundSprite.getLocalBounds().width,
         window.getSize().y / backgroundSprite.getLocalBounds().height
     );
 
-    // Draw the background sprite first
     window.draw(backgroundSprite);
 
     sf::FloatRect textBounds = questionText.getGlobalBounds();
@@ -84,7 +79,6 @@ void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window,
         answerText.setOutlineThickness(5);
         answerText.setPosition(sf::Vector2f(width / 3.f, height / 2.f + i * 50.f - 100.f));
 
-        // Check if the mouse is hovering over an answer
         if (answerText.getGlobalBounds().contains(sf::Vector2f(sf::Mouse::getPosition(window))))
         {
             answerText.setFillColor(sf::Color::Green);
@@ -100,7 +94,6 @@ void UserInterface<QuestionType>::displayAnswerOptions(sf::RenderWindow& window,
 template<class QuestionType>
 string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& window, sf::Time timerTime, QuestionType* q, UserInterface<QuestionType>& ui, MainMenu::QuizTopic selectedTopic)
 {
-    sf::Clock clock;
     sf::Text timeText;
     sf::Font font;
     font.loadFromFile("impact.ttf");
@@ -122,10 +115,9 @@ string UserInterface<QuestionType>::handleUserInteraction(sf::RenderWindow& wind
     sf::SoundBuffer buffer;
     buffer.loadFromFile("timer.wav");
     
-    sf::Clock timer;
-
     sf::Sound sound(buffer);
     sound.play();
+    sf::Clock clock;
 
     while (!answered && sound.getStatus() == sf::Music::Playing && sound.getPlayingOffset() < timerTime) {
         sf::Time elapsed = clock.getElapsedTime();
@@ -177,13 +169,13 @@ template<class QuestionType>
 bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, string userAnswer, QuestionType* q)
 {
     bool correct = false;
-    // Load the gif textures
     sf::Texture correctTexture;
     correctTexture.loadFromFile("correct.gif");
     sf::Texture incorrectTexture;
     incorrectTexture.loadFromFile("incorrect.gif");
 
     sf::Sprite backgroundSprite;
+
     sf::SoundBuffer buffer;
     buffer.loadFromFile((userAnswer == q->correctAnswer) ? "correct.wav" : "incorrect.wav");
     if (userAnswer == q->correctAnswer) {
@@ -200,7 +192,6 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
     );
     window.draw(backgroundSprite);
 
-    // Create the feedback text
     sf::Font font;
     font.loadFromFile("Trajan Bold.ttf");
     sf::Text feedbackText;
@@ -212,7 +203,7 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
     float maxWidth = window.getSize().x - 200; // assuming 100 pixels padding on either side
     feedbackText.setPosition((maxWidth - feedbackText.getGlobalBounds().width) / 2.f + 100, 100);
 
-    // Scale the text if it is wider than the window
+    // ensure that the text fits onto the window
     if (feedbackText.getGlobalBounds().width >= maxWidth) {
         string textString = feedbackText.getString();
         string firstLine, secondLine;
@@ -228,7 +219,7 @@ bool UserInterface<QuestionType>::displayFeedback(sf::RenderWindow& window, stri
     sf::Sound sound(buffer);
     window.display();
     sound.play();
-    // This loop is necessary for the audio to play
+    // This loop is necessary for the audio to play :: DO NOT DELETE
     while (sound.getStatus() == sf::Music::Playing) {}
     return correct;
 }
@@ -246,7 +237,7 @@ void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, cons
     sf::Text levelText;
     levelText.setFont(font);
     levelText.setCharacterSize(28);
-    levelText.setString("Level: " + std::to_string(level));
+    levelText.setString("Level: " + to_string(level) + "/" + to_string(numLevels));
     levelText.setPosition(sf::Vector2f(20, 20));
     window.draw(levelText);
 
@@ -254,7 +245,7 @@ void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, cons
     sf::Text scoreText;
     scoreText.setFont(font);
     scoreText.setCharacterSize(28);
-    scoreText.setString("Score: " + std::to_string(score));
+    scoreText.setString("Score: " + to_string(score));
     scoreText.setPosition(sf::Vector2f(width - 220, 20));
     window.draw(scoreText);
 
@@ -262,7 +253,7 @@ void UserInterface<QuestionType>::displayGameInfo(sf::RenderWindow& window, cons
     sf::Text questionNumberText;
     questionNumberText.setFont(font);
     questionNumberText.setCharacterSize(28);
-    questionNumberText.setString("Question " + std::to_string(questionNumber) + "/" + std::to_string(numQuestions * numLevels));
+    questionNumberText.setString("Question " + to_string(questionNumber) + "/" + to_string(numQuestions * 3));
     questionNumberText.setPosition(sf::Vector2f(width / 2 - 100, 20));
     window.draw(questionNumberText);
 }
@@ -302,7 +293,7 @@ string UserInterface<QuestionType>::displayEndGameScreen(sf::RenderWindow& windo
     sf::Text endGameText;
     endGameText.setFont(font);
     endGameText.setCharacterSize(24);
-    string scoreString = to_string((score / (NUM_QUESTIONS*3)) * 100);
+    string scoreString = to_string(int(round((double(score) / (NUM_QUESTIONS * 3)) * 100)));
     string endGameMessage = "Game Over! You scored: " + scoreString + "%";
     endGameText.setString(endGameMessage);
     endGameText.setPosition(window.getSize().x / 2 - endGameText.getGlobalBounds().width / 2,
@@ -373,6 +364,7 @@ string UserInterface<QuestionType>::displayEndGameScreen(sf::RenderWindow& windo
 
     return "restart";
 }
+
 
 
 template class UserInterface<MultipleChoiceQuestion>;

@@ -33,7 +33,6 @@ void QuestionBank<QuestionType>::loadQuestions(string fileName)
 template<class QuestionType>
 QuestionType QuestionBank<QuestionType>::getRandomQuestion()
 {
-    srand(time(0));
     int randomQuestionIndex = rand() % quizQuestions.size();
     while (usedQuestions.find(randomQuestionIndex) != usedQuestions.end())
     {
@@ -44,7 +43,7 @@ QuestionType QuestionBank<QuestionType>::getRandomQuestion()
 }
 
 template<class QuestionType>
-vector<QuestionType> QuestionBank<QuestionType>::getQuestions(int numQuestions, string filename)
+vector<QuestionType> QuestionBank<QuestionType>::getQuestions(int numQuestions, std::string filename)
 {
     loadQuestions(filename);
     vector<QuestionType> questions;

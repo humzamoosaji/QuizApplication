@@ -9,7 +9,7 @@ class MainMenu
 public:
 	enum QuizTopic { None, Football, Cricket, Rugby, TicTacToe };
 	QuizTopic getSelectedTopic(sf::RenderWindow& window);
-	string getFileName(QuizTopic topic, bool isMCQ);
+	string getFileName(const QuizTopic& topic, bool isMCQ);
 	MainMenu(float width, float height);
 
 	void draw(sf::RenderWindow& window);

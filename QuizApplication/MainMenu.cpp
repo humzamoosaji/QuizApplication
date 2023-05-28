@@ -46,7 +46,7 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 {
 	sf::Event event;
 	MainMenu::QuizTopic selected = MainMenu::None;
-	while (window.pollEvent(event))
+	while (window.isOpen() && window.pollEvent(event))
 	{
 		if (event.type == sf::Event::Closed)
 		{
@@ -67,7 +67,7 @@ MainMenu::QuizTopic MainMenu::getSelectedTopic(sf::RenderWindow& window)
 	return selected;
 }
 
-string MainMenu::getFileName(QuizTopic topic, bool isMCQ)
+string MainMenu::getFileName(const QuizTopic& topic, bool isMCQ)
 {
 	string extension = isMCQ ? "MCQ.txt" : "TF.txt";
 	switch (topic)
